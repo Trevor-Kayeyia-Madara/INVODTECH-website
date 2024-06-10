@@ -50,10 +50,10 @@ body {
     255,
     0.1
   ); /* Semi-transparent white background */
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(10px);
-  z-index: 1000;
-  padding: 13px 0;
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  z-index: 1000; /* Ensure navbar is above other content */
+  padding: 10px 0; /* Adjust padding as needed */
 }
 
 .navbar ul {
@@ -85,7 +85,7 @@ body {
 
 /* Main content styles */
 .content {
-  padding-top: 200px; /* Ensure content is not hidden behind the navbar */
+  padding-top: 100px; /* Ensure content is not hidden behind the navbar */
   text-align: center;
   color: white; /* Ensure content text color is white */
 }
@@ -112,5 +112,5 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 0 10px var(--cream); /* Glow effect on hover */
+  box-shadow: 0 0 10px maroon; /* Glow effect on hover */
 }
