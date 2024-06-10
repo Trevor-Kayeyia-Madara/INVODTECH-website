@@ -29,8 +29,7 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: var(--cream);
 }
-/* Global styles */
-/* Global styles */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -53,7 +52,7 @@ body {
   backdrop-filter: blur(10px); /* Blur effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
   z-index: 1000; /* Ensure navbar is above other content */
-  padding: 10px 0; /* Adjust padding as needed */
+  padding: 15px 0; /* Adjust padding as needed */
 }
 
 .navbar ul {
@@ -85,7 +84,7 @@ body {
 
 /* Main content styles */
 .content {
-  padding-top: 100px; /* Ensure content is not hidden behind the navbar */
+  padding-top: 50px; /* Ensure content is not hidden behind the navbar */
   text-align: center;
   color: white; /* Ensure content text color is white */
 }
