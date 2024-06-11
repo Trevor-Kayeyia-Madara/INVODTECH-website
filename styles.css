@@ -119,6 +119,7 @@ body {
 }
 .box i{
   font-size: larger;
+  color: var(--cream);
 }
 
  .box div:nth-child(1){
@@ -167,7 +168,7 @@ body {
   animation: animate 9s linear infinite;
 }
  .box div:nth-child(10){
-  top: 2%;
+  top: 20%;
   left: 0%;
   animation: animate 5s linear infinite;
 }
