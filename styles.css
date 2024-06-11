@@ -29,46 +29,58 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: var(--cream);
 }
+.logo {
+  height: 0.9cm;
+  width: 0.9cm;
+  padding: 6px;
+  margin-left: 15px;
+  border-radius: 20%;
+  border: 0.15rem solid var(--maroon);
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+  background-color: var(--hover-black);
+  transition: var(--trans);
+}
 
+.logo:focus,
+.logo:active {
+  outline-color: #000000;
+  box-shadow: 0 0 17px var(--glow-black);
+}
 body {
   position: relative;
+  content: "";
   width: 100%;
   height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
   font-family: Arial, sans-serif;
   background-color: black;
   color: white;
-  background-image: url("assets/bg2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-image: url("assets/homebg1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
 }
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
-  padding: 15px 0;
+  padding: 10px 20px;
 }
 
 .navbar ul {
   list-style-type: none;
+  margin-right: 10px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -77,11 +89,12 @@ body::before {
 .navbar li {
   display: inline-block;
   margin: 0 10px;
+  margin-left: 20px;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #fff; /* White text color for navbar links */
+  color: #fff;
   font-size: 18px;
   padding: 10px 20px;
   border-radius: 5px;
