@@ -30,17 +30,17 @@ html::-webkit-scrollbar-thumb {
   background: var(--cream);
 }
 .logo {
-  height: 0.9cm;
-  width: 0.9cm;
+  height: 0.73cm;
+  width: 0.69cm;
   padding: 6px;
   margin-left: 15px;
   border-radius: 20%;
   border: 0.15rem solid var(--maroon);
-  transition: transform 0.3s ease;
+  transition: transform 0.01s ease;
 }
 .logo:hover {
   transform: scale(1.1);
-  background-color: var(--hover-black);
+  /*background-color: var(--cream);*/
   transition: var(--trans);
 }
 
@@ -56,7 +56,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
   font-family: Arial, sans-serif;
   background-color: black;
   color: white;
@@ -72,15 +72,14 @@ body {
   align-items: center;
   width: 100vw;
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   z-index: 1000;
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 .navbar ul {
   list-style-type: none;
-  margin-right: 10px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -89,22 +88,22 @@ body {
 .navbar li {
   display: inline-block;
   margin: 0 10px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .navbar a {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 100px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .navbar a:hover {
-  background-color: maroon; /* Maroon background color on hover */
-  color: white; /* White text color on hover */
-  box-shadow: 0 0 10px maroon; /* Glow effect on hover */
+  background-color: maroon;
+  color: white;
+  box-shadow: 0 0 10px maroon;
 }
 
 /* Home section content */
