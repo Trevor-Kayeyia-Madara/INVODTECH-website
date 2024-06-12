@@ -223,14 +223,12 @@ button {
 button:hover {
   box-shadow: 0 0 10px maroon; /* Glow effect on hover */
 }
-
-/*----------------- -Services --------------*/
-
+/*-------- Services on home page starts------ */
 .container-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px; /* Space between containers */
+  gap: 15px; 
 }
 
 .container {
@@ -246,7 +244,7 @@ button:hover {
 }
 
 .container:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Slight grey background on hover */
+  background-color: rgba(0, 0, 0, 0.2); /* Slight grey background on hover */
 }
 
 .icon {
@@ -268,3 +266,4 @@ button:hover {
 .container:hover .name {
   color: grey;
 }
+/* Services on home page ends */
