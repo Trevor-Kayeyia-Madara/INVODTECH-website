@@ -252,7 +252,12 @@ button:hover {
 .material-symbols-outlined {
   font-size: 190em;
   margin-bottom: 20px;
+  transition: fill 0.3s ease;
   transition: transform 0.3s ease;
+  color: #ffffff;
+}
+.material-symbols-outlined:hover {
+  color: var(--maroon); /* Glow effect on hover */
 }
 
 .name {
@@ -262,7 +267,7 @@ button:hover {
 }
 
 .container:hover .material-symbols-outlined {
-  transform: scale(1.9);
+  transform: scale(1.8);
 }
 
 .container:hover .name {
