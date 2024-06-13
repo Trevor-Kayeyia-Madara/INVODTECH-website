@@ -5,6 +5,9 @@
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
 }
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
 
 :root {
   --brown: #513a2f;
@@ -59,7 +62,7 @@ body {
   z-index: 0;
   font-family: Arial, sans-serif;
   color: white;
-  background-image:url("assets/homebg1.jpg");
+  background-image: url("assets/homebg1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -246,7 +249,7 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.2); /* Slight grey background on hover */
 }
 
-.icon {
+.material-symbols-outlined {
   font-size: 2em;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
@@ -258,7 +261,7 @@ button:hover {
   transition: color 0.3s ease;
 }
 
-.container:hover .icon {
+.container:hover .material-symbols-outlined {
   transform: scale(1.2);
 }
 
