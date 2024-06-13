@@ -59,7 +59,7 @@ body {
   z-index: 0;
   font-family: Arial, sans-serif;
   color: white;
-  background-image: url("assets/homebg1.jpg");
+  background-image:url("assets/homebg1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
