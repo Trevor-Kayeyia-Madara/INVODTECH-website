@@ -76,7 +76,7 @@ header{
   align-items: center;
   padding: 30px 10%;
 }
-
+/*
 .navbar {
   position: fixed;
   display: flex;
@@ -89,7 +89,7 @@ header{
   z-index: 1000;
   padding: 10px;
 }
-
+*/
 .navbar ul {
   list-style-type: none;
   margin: 0;
