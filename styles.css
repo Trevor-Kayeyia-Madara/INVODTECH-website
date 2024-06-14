@@ -70,12 +70,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-}
+
 .navbar {
   position: fixed;
   display: flex;
@@ -109,12 +104,19 @@ header{
   border-radius: 100px;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
-
+.navbar li a {
+  transition: all 0.2s ease 0s;
+}
+.navbar li a:hover {
+  color: var(--maroon);
+}
+/*
 .navbar a:hover {
   background-color: maroon;
   color: white;
   box-shadow: 0 0 10px maroon;
 }
+  */
 /* animation background begins */
 .box div {
   position: absolute;
