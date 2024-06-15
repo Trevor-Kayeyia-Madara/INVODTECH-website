@@ -246,7 +246,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 0 10px maroon; /* Glow effect on hover */
+  box-shadow: 0 0 10px maroon;
 }
 /*-------- Services on home page starts------ */
 .container-wrapper {
