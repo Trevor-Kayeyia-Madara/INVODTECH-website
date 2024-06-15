@@ -316,8 +316,7 @@ button:hover {
 .slide-content{
   margin: 0 40px;
 }
-.card{
-  width: 25px;
+.card {
   border-radius: 25px;
   background-color: #fff;
   color: #000000;

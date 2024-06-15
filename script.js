@@ -1,8 +1,16 @@
+
 var swiper = new Swiper(".slide-content", {
-    slidesPerView: 1,
-    centeredSlides: false,
+    slidesPerView: 2,
+    centeredSlides: true,
+    spaceBetween: 25,
+    loop: true,
+    loopFilGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+      clickable: true,
+    },
     slidesPerGroupSkip: 1,
-    grabCursor: true,
+    loop: true,
     keyboard: {
       enabled: true,
     },
