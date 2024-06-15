@@ -86,7 +86,32 @@
     <!-- About section ends -->
 
     <!-- Services section starts -->
-    <section class="Services" id="Services"></section>
+    <section class="Services" id="Services">
+      <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="service1.jpg" alt="Service 1">
+            <div class="text">Service 1</div>
+        </div>
+        <div class="slide fade">
+            <img src="service2.jpg" alt="Service 2">
+            <div class="text">Service 2</div>
+        </div>
+        <div class="slide fade">
+            <img src="service3.jpg" alt="Service 3">
+            <div class="text">Service 3</div>
+        </div>
+        <!-- Add more slides as needed -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <!-- Add more dots as needed -->
+    </div>
+    </section>
     <!-- Services section ends -->
 
     <!-- Contact section starts -->
