@@ -5,7 +5,9 @@
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
 }
-section {
+* {box-sizing: border-box}
+  body {font-family: Arial, sans-serif;}
+  section {
   min-height: auto;
 }
 .material-symbols-outlined {
@@ -284,3 +286,7 @@ button:hover {
   color: grey;
 }
 /* Services on home page ends */
+
+/*-------- Services  page starts------ */
+
+/*-------- Services  page ends------ */
