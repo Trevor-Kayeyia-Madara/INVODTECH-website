@@ -306,7 +306,7 @@ button:hover {
 @keyframes slideUpEffect {
   from {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(50px); /* Adjust the Y value for more/less slide effect */
   }
   to {
       opacity: 1;

@@ -1,12 +1,16 @@
+//--------------------------------------------------------------------------------------------------------------------------------
 let slideIndex = 1;
 showSlides(slideIndex);
+let slideInterval = setInterval(() => plusSlides(1), 5000); // Change slide every 5 seconds
 
 function plusSlides(n) {
   showSlides((slideIndex += n));
+  resetInterval(); // Reset interval when manual navigation is used
 }
 
 function currentSlide(n) {
   showSlides((slideIndex = n));
+  resetInterval(); // Reset interval when manual navigation is used
 }
 
 function showSlides(n) {
@@ -30,3 +34,16 @@ function showSlides(n) {
   slides[slideIndex - 1].classList.add("slide-up");
   dots[slideIndex - 1].className += " active";
 }
+
+function resetInterval() {
+  clearInterval(slideInterval);
+  slideInterval = setInterval(() => plusSlides(1), 5000); // Change slide every 5 seconds
+}
+
+let slideshowContainer = document.querySelector(".slideshow-container");
+slideshowContainer.addEventListener("mouseover", () =>
+  clearInterval(slideInterval)
+);
+slideshowContainer.addEventListener("mouseout", () => resetInterval());
+
+//----------------------------------------------------------------//
