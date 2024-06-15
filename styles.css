@@ -5,11 +5,17 @@
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
 }
-* {box-sizing: border-box}
-  body {font-family: Arial, sans-serif;}
-  section {
-  min-height: auto;
+* {
+  box-sizing: border-box;
 }
+body {
+  font-family: Arial, sans-serif;
+}
+
+section {
+  padding-top: 50px;
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
 }
@@ -67,10 +73,6 @@ body {
   z-index: 0;
   font-family: Arial, sans-serif;
   color: white;
-  background-image: url("assets/homebg1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .navbar {
@@ -198,8 +200,16 @@ body {
 }
 /* animation background ends */
 /* Home section content */
+.Home {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("assets/homebg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .content {
-  padding-top: 200px;
+  padding-top: 0px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -309,12 +319,12 @@ button:hover {
 
 @keyframes slideUpEffect {
   from {
-      opacity: 0;
-      transform: translateY(50px);
+    opacity: 0;
+    transform: translateY(50px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -342,7 +352,8 @@ button:hover {
   margin: 10px 0;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -362,8 +373,9 @@ button:hover {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dot {
@@ -377,7 +389,8 @@ button:hover {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 /*-------- Services  page ends------ */
