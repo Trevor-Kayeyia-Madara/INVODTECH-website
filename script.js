@@ -1,4 +1,4 @@
-
+//-----------------------------------------------------------------------------------------// 
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 2,
     spaceBetween: 25,

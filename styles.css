@@ -365,10 +365,10 @@ button:hover {
 }
 .card-image{
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--cream);
   padding: 3px;
 }
 .card-image img{
