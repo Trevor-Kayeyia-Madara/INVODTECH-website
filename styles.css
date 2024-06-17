@@ -337,7 +337,7 @@ section .card .card-image img {
 }   
 .slide-content{
   margin: 0 40px;
-  background-color: #665248;
+  background-color: var(--cream);
   overflow: hidden;
   border-radius: 25px;
 }
