@@ -354,7 +354,6 @@ section .card .card-image img {
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
-  
 }
 .image-content{
   position: relative;
@@ -369,6 +368,7 @@ section .card .card-image img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 100;
 }
 .media-icons i {
   color: #fff;
@@ -382,8 +382,6 @@ section .card .card-image img {
   opacity: 1;
   color: var(--cream);
 }
-
-
 .overlay{
   position: absolute;
   left: 0;
