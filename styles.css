@@ -37,6 +37,7 @@ section {
 html {
   overflow-x: hidden;
 }
+/*
 html::-webkit-scrollbar {
   width: 1rem;
 }
@@ -47,6 +48,7 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: var(--cream);
 }
+  */
 .logo {
   height: 0.73cm;
   width: 0.69cm;
@@ -261,7 +263,7 @@ button:hover {
 }
 
 .container {
-  border: 2px solid grey;
+  border: 1.5px solid grey;
   background-color: rgba(255, 255, 255, 0); /* Clear background */
   width: 180px;
   height: 150px;
@@ -273,7 +275,7 @@ button:hover {
 }
 
 .container:hover {
-  background-color: rgba(0, 0, 0, 0.2); /* Slight grey background on hover */
+  background-color: rgba(0, 0, 0, 0.1); /* Slight grey background on hover */
 }
 
 .material-symbols-outlined {
@@ -281,7 +283,7 @@ button:hover {
   margin-bottom: 20px;
   transition: fill 0.3s ease;
   transition: transform 0.3s ease;
-  color: #ffffff;
+  color: var(--white);
 }
 .material-symbols-outlined:hover {
   color: var(--maroon); /* Glow effect on hover */
@@ -289,22 +291,25 @@ button:hover {
 
 .name {
   font-size: 1.2em;
+  color: var(--white);
   text-align: center;
   transition: color 0.3s ease;
+}
+.name:hover {
+  color: var(--white); /* Glow effect on hover */
 }
 
 .container:hover .material-symbols-outlined {
   transform: scale(1.8);
 }
 
-.container:hover .name {
+.container:hover{
   color: grey;
 }
 /* Services on home page ends */
 
-
-/*--------------------- Our Team---------------------- */
-.Team{
+/*--------------------- Our Team starts---------------------- */
+.Team {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -328,14 +333,13 @@ section .card .card-image img {
   border: 3px solid var(--cream);
 }
 
-
-.slide-container{
+.slide-container {
   max-width: 1120px;
   width: 100%;
   background-color: grey;
   padding: 40px 0;
-}   
-.slide-content{
+}
+.slide-content {
   margin: 0 40px;
   background-color: var(--cream);
   overflow: hidden;
@@ -348,20 +352,19 @@ section .card .card-image img {
 }
 
 .image-content,
-.card-content{
+.card-content {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
 }
-.image-content{
+.image-content {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
-
 }
- .media-icons {
+.media-icons {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -382,7 +385,7 @@ section .card .card-image img {
   opacity: 1;
   color: var(--cream);
 }
-.overlay{
+.overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -392,8 +395,8 @@ section .card .card-image img {
   border-radius: 25px 25px 0 25px;
 }
 .overlay::before,
-.overlay::after{
-  content: '';
+.overlay::after {
+  content: "";
   position: absolute;
   right: 0;
   bottom: -40px;
@@ -401,11 +404,11 @@ section .card .card-image img {
   width: 40px;
   background-color: var(--maroon);
 }
-.overlay::after{
+.overlay::after {
   border-radius: 0 25px 0 0;
   background-color: var(--white);
 }
-.card-image{
+.card-image {
   position: relative;
   height: 140px;
   width: 140px;
@@ -413,72 +416,56 @@ section .card .card-image img {
   background: var(--cream);
   padding: 3px;
 }
-.card-image img{
+.card-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--maroon);
 }
-.name{
+.name {
   font-size: 18px;
   font-weight: 500;
   color: #333;
 }
-.description{
+.description {
   font-size: 14px;
   white-space: normal;
   word-wrap: break-word;
   overflow: hidden;
   text-align: center;
 }
-.swiper-navBtn{
+.swiper-navBtn {
   color: #513a2f;
   transition: color 0.3s ease;
 }
-.swiper-navBtn:hover{
+.swiper-navBtn:hover {
   color: #871828;
 }
 .swiper-navBtn::before,
-.swiper-navBtn::after{
+.swiper-navBtn::after {
   font-size: 40px;
 }
-.swiper-button-next{
+.swiper-button-next {
   right: 0;
 }
-.swiper-button-prev{
+.swiper-button-prev {
   left: 0;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: var(--maroon);
   opacity: 1;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: var(--cream);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--------------------- Our Team Ends---------------------- */
 
 @media screen and (max-width: 768px) {
-  .slide-content{
+  .slide-content {
     margin: 0 10px;
   }
-  .swiper-navBtn{
+  .swiper-navBtn {
     display: none;
   }
-} 
+}
