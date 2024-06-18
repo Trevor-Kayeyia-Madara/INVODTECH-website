@@ -461,6 +461,34 @@ section .card .card-image img {
   background-color: var(--cream);
 }
 /*--------------------- Our Team Ends---------------------- */
+/*--------------------- About Us starts---------------------- */
+
+/*-------------------- About Us ends--------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   .slide-content {
@@ -468,5 +496,13 @@ section .card .card-image img {
   }
   .swiper-navBtn {
     display: none;
+  }
+  #About .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #About .text, #About .images {
+    padding: 0;
   }
 }
