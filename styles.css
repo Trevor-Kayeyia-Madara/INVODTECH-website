@@ -314,7 +314,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--cream);
+  background-color: var(--black);
 }
 
 section .card .card-image {
@@ -334,14 +334,14 @@ section .card .card-image img {
 }
 
 .slide-container {
-  max-width: 1120px;
+  max-width: 1200px;
   width: 100%;
   background-color: grey;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 .slide-content {
-  margin: 0 40px;
-  background-color: var(--cream);
+  margin: 0 100px;
+  /*background-color: var(--cream);*/
   overflow: hidden;
   border-radius: 25px;
 }
