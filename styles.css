@@ -211,6 +211,7 @@ body {
   width: 100vw;
   background-image: url("assets/homebg1.jpg");
   background-size: cover;
+  filter: blur(.2px);
   background-position: center;
   background-repeat: no-repeat;
 }
