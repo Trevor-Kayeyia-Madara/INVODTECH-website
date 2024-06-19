@@ -508,6 +508,11 @@ section.About-section {
   right: 0;
   width: 40%;
 }
+#About .text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
 .About p {
   color: #F9F6F0;
   margin-right: 45%;
