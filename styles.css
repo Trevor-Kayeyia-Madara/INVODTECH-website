@@ -497,7 +497,7 @@ section.About-section {
   text-align: center;
   margin: 0;
   color: #871828;
-  padding: 80px 0;
+  padding: 25px 0;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
   padding-right: 20%;
   margin-bottom: -10px;
@@ -530,12 +530,15 @@ section.About-section {
   margin-bottom: -10px;
 }
 ul {
-    list-style-type: circle; /* Circle bullets */
-    list-style-type: square; /* Square bullets */
+    list-style-type: disc;
+    padding-bottom: 10px;
 }
 ul.custom-bullets {
-  /*background: url('bullet.png') no-repeat left center; */
+  /*background: url('bullet.png')*/
   padding-left: 95px; 
+}
+li{
+  padding-bottom: 10px;
 }
 
 .About p span a {
