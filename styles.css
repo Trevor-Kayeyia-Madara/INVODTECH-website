@@ -477,19 +477,15 @@ section .card .card-image img {
 }
 /*--------------------- Our Team Ends---------------------- */
 /*--------------------- About Us starts---------------------- */
-.About {
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  color: var(--black);
-}
-section.abs-section {
+section.About-section {
   margin: 0;
 }
-.About-section {
+.About {
   position: relative;
-  height: 100vh;
-  background-image: url("/assets/services/coding.jpg");
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/hero-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -500,7 +496,7 @@ section.abs-section {
   font-weight: bold;
   text-align: center;
   margin: 0;
-  color: #FF9D2E;
+  color: #871828;
   padding: 80px 0;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
   padding-right: 20%;
@@ -512,7 +508,7 @@ section.abs-section {
   right: 0;
   width: 40%;
 }
-.abs-section p {
+.About p {
   color: #F9F6F0;
   margin-right: 45%;
   margin-left: 4%;
@@ -521,9 +517,9 @@ section.abs-section {
   padding: 6px;
   margin-bottom: 32px;
 }
-.abs-section p span a {
+.About p span a {
   text-decoration: none;
-  color: #FF9D2E;
+  color: var(--cream);
 }
 
 
