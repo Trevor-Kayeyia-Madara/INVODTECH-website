@@ -477,6 +477,8 @@ section.About-section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .abs-title {
   font-family: cursive, sans-serif;
