@@ -265,7 +265,6 @@ button:hover {
   flex-wrap: wrap;
   gap: 15px;
 }
-
 .container {
   border: 1.5px solid grey;
   background-color: rgba(255, 255, 255, 0); /* Clear background */
@@ -311,7 +310,6 @@ button:hover {
   color: grey;
 }
 /* Services on home page ends */
-
 /*--------------------- Our Team starts---------------------- */
 .Team {
   min-height: 100vh;
