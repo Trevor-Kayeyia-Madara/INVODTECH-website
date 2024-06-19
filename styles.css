@@ -50,6 +50,7 @@ section {
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 /*
 html::-webkit-scrollbar {
@@ -476,7 +477,54 @@ section .card .card-image img {
 }
 /*--------------------- Our Team Ends---------------------- */
 /*--------------------- About Us starts---------------------- */
-
+.About {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
+section.abs-section {
+  margin: 0;
+}
+.About-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("/assets/services/coding.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.abs-title {
+  font-family: cursive, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  color: #FF9D2E;
+  padding: 80px 0;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  padding-right: 20%;
+  margin-bottom: -10px;
+}
+.abs-image img {
+  position: absolute;
+  top: 12%;
+  right: 0;
+  width: 40%;
+}
+.abs-section p {
+  color: #F9F6F0;
+  margin-right: 45%;
+  margin-left: 4%;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  padding: 6px;
+  margin-bottom: 32px;
+}
+.abs-section p span a {
+  text-decoration: none;
+  color: #FF9D2E;
+}
 
 
 /*-------------------- About Us ends--------------------- */
