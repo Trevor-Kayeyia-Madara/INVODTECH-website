@@ -518,6 +518,17 @@ section.About-section {
   padding: 6px;
   margin-bottom: 32px;
 }
+.About h2, ul.About{
+  font-family: cursive, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #871828;
+  margin-left: 67px;
+  padding: 15px 12px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  padding-right: 20%;
+  margin-bottom: -10px;
+}
 .About p span a {
   text-decoration: none;
   color: var(--cream);
