@@ -583,7 +583,7 @@ li {
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background: var(--maroon);
+    background:var(--maroon);
     z-index: 1;
     padding: 40px;
     display: flex;
@@ -630,7 +630,6 @@ li {
     text-decoration: none;
     width: 30px;
     min-width: 30px;
-    
 }
 
 .containerC .contactInfo ul.info li span:nth-child(1) img
