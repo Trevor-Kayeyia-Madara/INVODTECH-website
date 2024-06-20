@@ -574,7 +574,7 @@ footer {
 	position: absolute;
 	left: 0;
 	bottom: -4px;
-	background-color: #e91e63;
+	background-color: var(--cream);
 	height: 2px;
 	box-sizing: border-box;
 	width: 75px;
@@ -594,7 +594,7 @@ footer {
 	transition: all 0.4s ease;
 }
 .social-links a i:hover {
-    color: #e91e63;
+    color: var(--cream);
     transform: translateY(-4px);
 }
 .footer-copyright, .footer-copyright h3 a {
