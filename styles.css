@@ -212,6 +212,7 @@ body {
   }
 }
 /* animation background ends */
+
 /* Home section content */
 .Home {
   height: 100vh;
@@ -284,7 +285,7 @@ button:hover {
 }
 
 .container:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Slight grey background on hover */
+  background-color: rgba(0, 0, 0, 0.1); 
 }
 
 .material-symbols-outlined {
@@ -295,7 +296,7 @@ button:hover {
   color: var(--white);
 }
 .material-symbols-outlined:hover {
-  color: var(--maroon); /* Glow effect on hover */
+  color: var(--maroon); 
 }
 
 .name {
@@ -305,7 +306,7 @@ button:hover {
   transition: color 0.3s ease;
 }
 .name:hover {
-  color: var(--white); /* Glow effect on hover */
+  color: var(--white);
 }
 
 .container:hover .material-symbols-outlined {
@@ -544,7 +545,8 @@ li {
 /*-------------------- About Us ends--------------------- */
 
 /*-------------------- Conact section starts--------------------- */
-.Contact{
+.Contact
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -552,7 +554,8 @@ li {
     background: linear-gradient(to right, #ffe8a2, maroon);
     color: #871828;
 }
-.Contact::before{
+.Contact::before
+{
     content: '';
     position: absolute;
     top: 0;
