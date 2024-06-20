@@ -227,6 +227,7 @@ body {
 
 .content h1 {
   font-size: 30px;
+  margin-top: 55px;
   margin-bottom: 20px;
   margin-left: 5px;
 }
@@ -234,6 +235,7 @@ body {
 .content p {
   font-size: 35px;
   margin-bottom: 40px;
+  margin-left: 20px;
 }
 .content span {
   color: var(--maroon);
