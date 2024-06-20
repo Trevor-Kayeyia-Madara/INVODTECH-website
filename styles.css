@@ -544,18 +544,15 @@ li {
 /*-------------------- About Us ends--------------------- */
 
 /*-------------------- Conact section starts--------------------- */
-.Contact
-{
+.Contact{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: line-height(to right, #ffe8a2, #871828);
-   
-
+    background: linear-gradient(to right, #ffe8a2, maroon);
+    color: #871828;
 }
-.Contact::before
-{
+.Contact::before{
     content: '';
     position: absolute;
     top: 0;
@@ -683,7 +680,7 @@ li {
 
 .containerC .contactForm h2
 {
-    color: #0f3959;
+    color: var(--black);
     font-size: 24px;
     font-weight: 500;
 }
@@ -752,7 +749,7 @@ li {
     font-size:  12px;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #095a55;
+    color: #871828;
     font-weight: 500;
 } 
 
@@ -761,7 +758,7 @@ li {
 {
     position: relative;
     cursor: pointer;
-    background: #095a55;
+    background: #871828;
     border-radius: 20px;
     color: #fff;
     border: none;
@@ -771,7 +768,7 @@ li {
 }
 
 .containerC .contactForm .formBox .inputBox input[type="submit"]:hover{
-    background: #0d9480;
+    background: #ffe8a2;
 }
 
 /*  Responsive Form*/
