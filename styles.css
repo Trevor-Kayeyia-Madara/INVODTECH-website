@@ -535,7 +535,7 @@ li {
 
 /*-------------------- Footer section starts--------------------- */
 footer {
-	background-color: #24262b;
+	background-color: #871828/*#24262b*/;
 }
 .footer-row {
     display: flex;
@@ -560,7 +560,7 @@ footer {
 	color: #bbbbbb;
 }
 .footer-col ul li a:hover {
-    color: #e91e63;
+    color: var(--cream);
 }
 .footer-title {
     position: relative;
