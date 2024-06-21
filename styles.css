@@ -224,7 +224,7 @@ body {
   background-repeat: no-repeat;
 }
 .content {
-  padding-top: 0px;
+  padding-top: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
