@@ -238,7 +238,7 @@ body {
   font-size: 30px;
   margin-top: 55px;
   margin-bottom: 20px;
-  margin-left: 5px;
+  margin-left: 115px;
 }
 
 .content p {
@@ -267,7 +267,7 @@ button:hover {
 }
 /*-------- Services on home page starts------ */
 .container-wrapper {
-  margin-top: 125px;
+  margin-top: 115px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
