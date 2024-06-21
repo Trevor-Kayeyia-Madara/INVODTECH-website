@@ -878,7 +878,7 @@ li {
 
 /*-------------------- Footer section starts--------------------- */
 footer {
-	background-color: #871828/*#24262b*/;
+	background-color: #871828;
 }
 .footer-row {
     display: flex;
@@ -891,6 +891,7 @@ footer {
     width: 250px;
     padding: 8px;
 }
+
 .footer-col ul {
     list-style-type: none;
 }
