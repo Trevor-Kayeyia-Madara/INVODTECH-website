@@ -270,7 +270,7 @@ button:hover {
 }
 .container {
   border: 1.5px solid grey;
-  background-color: rgba(255, 255, 255, 0); /* Clear background */
+  background-color: rgba(255, 255, 255, 0);
   width: 180px;
   height: 150px;
   display: flex;
@@ -312,7 +312,9 @@ button:hover {
 .container:hover {
   color: grey;
 }
+
 /* Services on home page ends */
+
 /*--------------------- Our Team starts---------------------- */
 .Team {
   min-height: 100vh;
