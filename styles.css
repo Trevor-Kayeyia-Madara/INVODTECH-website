@@ -2,14 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
 /* Global styles */
 * {
   margin: 0;
@@ -335,6 +330,7 @@ section .card .card-image {
   padding: 3px;
   background: var(--black);
 }
+
 section .card .card-image img {
   height: 100%;
   width: 100%;
@@ -355,6 +351,7 @@ section .card .card-image img {
   overflow: hidden;
   border-radius: 25px;
 }
+
 .card {
   border-radius: 25px;
   background-color: #fff;
@@ -462,6 +459,7 @@ section .card .card-image img {
 .swiper-button-prev {
   left: 0;
 }
+
 .swiper-pagination-bullet {
   background-color: var(--maroon);
   opacity: 1;
