@@ -771,7 +771,6 @@ li {
 .containerC .contactForm .formBox .inputBox input[type="submit"]:hover{
     background: #ffe8a2;
 }
-
 /*  Responsive Form*/
 @media (max-width: 1200px)
 {
