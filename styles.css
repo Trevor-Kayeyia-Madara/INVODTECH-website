@@ -571,9 +571,6 @@ li {
     min-height: 550px;
     display: flex;
     z-index: 1000;
-    /* border-radius: 22px; */
-    /* background-color: #fff; */
-
 }
 
 .containerC .contactInfo
