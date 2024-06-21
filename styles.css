@@ -267,10 +267,11 @@ button:hover {
 }
 /*-------- Services on home page starts------ */
 .container-wrapper {
+  margin-top: 125px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 25px;
 }
 .container {
   border: 1.5px solid grey;
