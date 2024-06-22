@@ -73,10 +73,8 @@ html {
 body {
   position: relative;
   content: "";
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
+  width: 100%; height: auto;
+  top: 0; left: 0;
   z-index: 0;
   font-family: Arial, sans-serif;
   color: white;
@@ -96,8 +94,7 @@ body {
 }
 .navbar ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
   text-align: center;
 }
 
@@ -127,13 +124,13 @@ body {
   color: white;
   box-shadow: 0 0 10px maroon;
 }
+
   */
 
 /* animation background begins */
 .box div {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 30px; height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,53 +143,43 @@ body {
 }
 
 .box div:nth-child(1) {
-  top: 30%;
-  left: 42%;
+  top: 30%; left: 42%;
   animation: animate 10s linear infinite;
 }
 .box div:nth-child(2) {
-  top: 70%;
-  left: 50%;
+  top: 70%; left: 50%;
   animation: animate 7s linear infinite;
 }
 .box div:nth-child(3) {
-  top: 17%;
-  left: 6%;
+  top: 17%;left: 6%;
   animation: animate 9s linear infinite;
 }
 .box div:nth-child(4) {
-  top: 70%;
-  left: 60%;
+  top: 70%;left: 60%;
   animation: animate 10s linear infinite;
 }
 .box div:nth-child(5) {
-  top: 85%;
-  left: 10%;
+  top: 85%; left: 10%;
   animation: animate 6s linear infinite;
 }
 .box div:nth-child(6) {
-  top: 8%;
-  left: 70%;
+  top: 8%; left: 70%;
   animation: animate 15s linear infinite;
 }
 .box div:nth-child(7) {
-  top: 60%;
-  left: 30%;
+  top: 60%;left: 30%;
   animation: animate 15s linear infinite;
 }
 .box div:nth-child(8) {
-  top: 80%;
-  left: 80%;
+  top: 80%; left: 80%;
   animation: animate 16s linear infinite;
 }
 .box div:nth-child(9) {
-  top: 4%;
-  left: 70%;
+  top: 4%;left: 70%;
   animation: animate 9s linear infinite;
 }
 .box div:nth-child(10) {
-  top: 20%;
-  left: 0%;
+  top: 20%; left: 0%;
   animation: animate 5s linear infinite;
 }
 
