@@ -323,7 +323,12 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--black);
+  background-image: url(assets/abt.jpg);
+  background-size: cover;
+  background-position: center;
+  background-image: fill;
+  background-repeat: no-repeat;
+  /*background-color: var(--black);*/
 }
 
 section .card .card-image {
@@ -346,7 +351,7 @@ section .card .card-image img {
 .slide-container {
   max-width: 1200px;
   width: 100%;
-  background-color: grey;
+  /*background-color: grey;*/
   padding: 60px 0;
 }
 .slide-content {
