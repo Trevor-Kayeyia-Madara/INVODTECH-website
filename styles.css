@@ -861,7 +861,7 @@ li {
 
 /*-------------------- Footer section starts--------------------- */
 footer {
-	background-color: #871828;
+	background-color: #871828; 
 }
 .footer-row {
     display: flex;
@@ -950,5 +950,6 @@ footer {
         font-size: 14px;
     }
 }
+
 
 /*-------------------- Footer section ends ------------------- */
