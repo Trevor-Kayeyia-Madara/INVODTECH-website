@@ -317,6 +317,81 @@ button:hover {
 
 /* Services on home page ends */
 
+
+
+/*--------------------- About Us starts---------------------- */
+section.About-section {
+  margin: 0;
+}
+.About {
+  position: relative;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-image: url("assets/bg_black.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.abs-title {
+  font-family: cursive, sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  color: #871828;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  padding-right: 20%;
+  margin-bottom: -10px;
+}
+.abs-image img {
+  position: absolute;
+  top: 12%;
+  right: 0;
+  width: 40%;
+}
+
+.About p {
+  color: #f9f6f0;
+  margin-right: 45%;
+  margin-left: 4%;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+.About h2,
+ul.About {
+  font-family: cursive, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #871828;
+  margin-left: 70px;
+  padding: 15px 12px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  padding-right: 20%;
+  padding-bottom: 4px;
+}
+ul {
+  list-style-type: disc;
+  padding-bottom: 10px;
+}
+ul.custom-bullets {
+  padding-left: 95px;
+}
+li {
+  padding-bottom: 10px;
+}
+
+.About p span a {
+  text-decoration: none;
+  color: var(--cream);
+}
+/*-------------------- About Us ends--------------------- */
+
 /*--------------------- Our Team starts---------------------- */
 .Team {
   min-height: 100vh;
@@ -478,80 +553,7 @@ section .card .card-image img {
 }
 /*--------------------- Our Team Ends---------------------- */
 
-/*--------------------- About Us starts---------------------- */
-section.About-section {
-  margin: 0;
-}
-.About {
-  position: relative;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  background-image: url("assets/bg_black.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.abs-title {
-  font-family: cursive, sans-serif;
-  font-size: 38px;
-  font-weight: bold;
-  text-align: center;
-  color: #871828;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white;
-  padding-right: 20%;
-  margin-bottom: -10px;
-}
-.abs-image img {
-  position: absolute;
-  top: 12%;
-  right: 0;
-  width: 40%;
-}
-
-.About p {
-  color: #f9f6f0;
-  margin-right: 45%;
-  margin-left: 4%;
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
-  padding: 6px;
-  margin-bottom: 10px;
-}
-.About h2,
-ul.About {
-  font-family: cursive, sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  color: #871828;
-  margin-left: 70px;
-  padding: 15px 12px;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white;
-  padding-right: 20%;
-  padding-bottom: 4px;
-}
-ul {
-  list-style-type: disc;
-  padding-bottom: 10px;
-}
-ul.custom-bullets {
-  padding-left: 95px;
-}
-li {
-  padding-bottom: 10px;
-}
-
-.About p span a {
-  text-decoration: none;
-  color: var(--cream);
-}
-/*-------------------- About Us ends--------------------- */
-
-/*-------------------- Conact section starts--------------------- */
+/*-------------------- Contact section starts--------------------- */
 .Contact {
   display: flex;
   justify-content: center;
