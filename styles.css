@@ -392,6 +392,20 @@ li {
 }
 /*-------------------- About Us ends--------------------- */
 
+
+.Values {
+  position: relative;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-image: url("assets/bg_black.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 /*--------------------- Our Team starts---------------------- */
 .Team {
   min-height: 100vh;
