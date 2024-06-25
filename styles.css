@@ -978,7 +978,7 @@ footer {
   color: #ffffff;
 }
 
-.footer .footer-top .footer-newsletter input[type="submit"] {
+ .footer-newsletter input[type="submit"] {
   border: 0;
   width: 40%;
   padding: 6px 0;
@@ -990,14 +990,14 @@ footer {
   cursor: pointer;
 }
 
-.footer .footer-top .footer-newsletter input[type="submit"]:hover {
+ .footer-newsletter input[type="submit"]:hover {
   color: #ffffff;
   background: #00bfff;
   border: 1px solid #00bfff;
   letter-spacing: .2rem;
 }
 
-.footer .footer-top .footer-newsletter p {
+ .footer-newsletter p {
   color: #ffffff;
   font-size: 14px;
 }
