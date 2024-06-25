@@ -970,7 +970,37 @@ footer {
   width: 75px;
 }
 
+ .footer-newsletter input[type="email"] {
+  padding: 6px 8px;
+  width: 60%;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
 
+.footer .footer-top .footer-newsletter input[type="submit"] {
+  border: 0;
+  width: 40%;
+  padding: 6px 0;
+  text-align: center;
+  color: black;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer .footer-top .footer-newsletter input[type="submit"]:hover {
+  color: #ffffff;
+  background: #00bfff;
+  border: 1px solid #00bfff;
+  letter-spacing: .2rem;
+}
+
+.footer .footer-top .footer-newsletter p {
+  color: #ffffff;
+  font-size: 14px;
+}
 
 
 .social-links a i {
