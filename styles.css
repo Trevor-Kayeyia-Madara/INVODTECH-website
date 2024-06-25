@@ -941,6 +941,7 @@ footer {
 .footer-col ul {
   list-style-type: none;
 }
+
 .footer-col ul li a {
   text-transform: capitalize;
   text-align: center;
@@ -949,7 +950,7 @@ footer {
   letter-spacing: 0.8px;
   color: #bbbbbb;
 }
-.footer-col ul li a:hover {
+.footer-col .footer-links ul li a:hover {
   color: var(--cream);
 }
 .footer-title {
@@ -969,6 +970,7 @@ footer {
   box-sizing: border-box;
   width: 75px;
 }
+
 
  .subs input[type="email"] {
   padding: 6px 8px;
