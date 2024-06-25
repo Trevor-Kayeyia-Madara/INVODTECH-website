@@ -992,7 +992,7 @@ footer {
 
  .subs input[type="submit"]:hover {
   color: #ffffff;
-  background: var(--black);
+  background: var(--maroon);
   border: 1px solid var(--cream);
   letter-spacing: .2rem;
 }
