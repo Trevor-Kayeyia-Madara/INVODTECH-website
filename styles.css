@@ -621,16 +621,7 @@ section .card .card-image img {
 /*--------------------- Our Team Ends---------------------- */
 
 /*-------------------- CTA section starts------------------- */
-.CTA {
-  background-color: #222;
-  background-size: cover;
-  background-position: center;
-  background-image: fill;
-  background-repeat: no-repeat;
-  min-height: auto !important;
-  align-items: center;
-  justify-content: center;
-}
+
 /*--------------------- CTA section Ends---------------------- */
 
 /*-------------------- Contact section starts--------------------- */
