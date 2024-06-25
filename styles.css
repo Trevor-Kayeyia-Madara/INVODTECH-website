@@ -970,7 +970,7 @@ footer {
   width: 75px;
 }
 
- .footer-newsletter input[type="email"] {
+ .subs input[type="email"] {
   padding: 6px 8px;
   width: 60%;
   border: 1px solid #ffffff;
@@ -978,7 +978,7 @@ footer {
   color: #ffffff;
 }
 
- .footer-newsletter input[type="submit"] {
+ .subs input[type="submit"] {
   border: 0;
   width: 40%;
   padding: 6px 0;
@@ -990,14 +990,14 @@ footer {
   cursor: pointer;
 }
 
- .footer-newsletter input[type="submit"]:hover {
+ .subs input[type="submit"]:hover {
   color: #ffffff;
   background: #00bfff;
-  border: 1px solid #00bfff;
+  border: 1px solid var(--cream);
   letter-spacing: .2rem;
 }
 
- .footer-newsletter p {
+.subs p {
   color: #ffffff;
   font-size: 14px;
 }
