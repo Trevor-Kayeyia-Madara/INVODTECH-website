@@ -973,7 +973,7 @@ footer {
  .subs input[type="email"] {
   padding: 6px 8px;
   width: 60%;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--cream);
   background: transparent;
   color: #ffffff;
 }
