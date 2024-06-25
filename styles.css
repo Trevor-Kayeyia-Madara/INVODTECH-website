@@ -394,8 +394,8 @@ li {
 
 /*-------------------- Values starts--------------------- */
 .Values {
-  background-color: var(--black);
-  background-image: url(/assets/srt_neon.jpg);
+  background-color: #222;
+  /*background-image: url(/assets/srt_neon.jpg);*/
   background-size: cover;
   background-position: center;
   background-image: fill;
