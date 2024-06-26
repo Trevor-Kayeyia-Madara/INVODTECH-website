@@ -630,14 +630,18 @@ section .card .card-image img {
   background-image: url(assets/srt_neon.jpg);
   align-items: center;
   justify-content: center;
-
+  overflow: hidden;
+}
+#testimonials {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
 }
+
 .testimonial {
   width: 80%;
   max-width: 600px;
@@ -648,7 +652,7 @@ section .card .card-image img {
   text-align: center;
   position: absolute;
   opacity: 0;
-  transition: opacity 5s;
+  transition: opacity 3s;
 }
 
 .testimonial.active {
