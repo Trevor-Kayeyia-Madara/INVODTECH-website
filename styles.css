@@ -629,6 +629,31 @@ section .card .card-image img {
   align-items: center;
   justify-content: center;
 }
+#testimonials {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonial {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 1em;
+  color: #555;
+  font-style: italic;
+}
 
 /*-------------------- Testimonials section starts------------------- */
 
