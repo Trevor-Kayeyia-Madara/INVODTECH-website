@@ -643,16 +643,18 @@ section .card .card-image img {
 }
 
 .testimonial {
-  width: 80%;
+  width: 100%;
   max-width: 600px;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 40px;
+  border-radius: 20px;
   background: linear-gradient(135deg, white, grey, maroon);
   color: #fff;
   text-align: center;
   position: absolute;
   opacity: 0;
   transition: opacity 3s;
+  margin-top: 18%;
+  margin-left: 25%;
 }
 
 .testimonial.active {
