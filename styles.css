@@ -647,7 +647,8 @@ section .card .card-image img {
   max-width: 600px;
   padding: 40px;
   border-radius: 20px;
-  background: linear-gradient(135deg, white, grey, maroon);
+  /*background: linear-gradient(135deg, #871828, #ffe8a2);*/
+  background: linear-gradient(135deg,maroon, #333,#ffe8a2 );
   color: #fff;
   text-align: center;
   position: absolute;
