@@ -620,8 +620,7 @@ section .card .card-image img {
 }
 /*--------------------- Our Team Ends---------------------- */
 .Testimonials {
-  background-color: #222;
-  /*background-image: url(/assets/srt_neon.jpg);*/
+  background-color: #777;
   background-size: cover;
   background-position: center;
   background-image: fill;
