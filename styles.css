@@ -687,7 +687,7 @@ section .card .card-image img {
 /*---------- CTA Starts --------- */
 .cta {
   text-align: center; 
-  margin-top: 20px; 
+  margin-top: 30%;
 }
 
 .cta button {
