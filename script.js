@@ -51,5 +51,5 @@ document.addEventListener('DOMContentLoaded', () => {
       testimonials[index].classList.add('active');
   }
 
-  setInterval(showNextTestimonial, 3000);
+  setInterval(showNextTestimonial, 5000);
 });
