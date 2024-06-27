@@ -683,8 +683,27 @@ section .card .card-image img {
 }
 
 /*--------------------- Testimonials section Ends---------------------- */
-/*---------- CTA Starts --------- */
 
+/*---------- CTA Starts --------- */
+.cta {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.cta button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta button:hover {
+  background-color: white;
+  color: black;
+}
 /*---------- CTA Ends --------- */
 /*-------------------- Contact section starts--------------------- */
 .Contact {
