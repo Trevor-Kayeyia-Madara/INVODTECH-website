@@ -701,8 +701,9 @@ section .card .card-image img {
 }
 
 .cta button:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--maroon);
+  border: 1px solid maroon;
+  color: var(--white);
 }
 /*---------- CTA Ends --------- */
 /*-------------------- Contact section starts--------------------- */
