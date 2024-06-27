@@ -52,4 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   setInterval(showNextTestimonial, 5000);
+  
 });
