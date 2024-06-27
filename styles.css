@@ -904,6 +904,91 @@ section .card .card-image img {
 .containerC .contactForm .formBox .inputBox input[type="submit"]:hover {
   background: #ffe8a2;
 }
+/*-------------------------------------*/
+.contactForm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.formBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* ========================== */
+.inputBox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputBox.w50 {
+  width: 48%;
+}
+
+.inputBox.w100 {
+  width: 100%;
+}
+
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+}
+
+.inputBox textarea {
+  resize: none;
+  height: 120px;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 16px;
+  color: #999;
+  transition: 0.3s;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.inputBox input[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inputBox input[type="submit"]:hover {
+  background-color: #0056b3;
+}
 /*  Responsive Form*/
 @media (max-width: 1200px) {
   .containerC {
