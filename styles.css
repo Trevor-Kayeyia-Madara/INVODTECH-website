@@ -625,6 +625,9 @@ section .card .card-image img {
   background-color: var(--cream);
 }
 /*--------------------- Our Team Ends---------------------- */
+
+/*-------------------- Testimonials section starts------------------- */
+
 .Testimonials {
   min-height: 100vh;
   position: relative;
@@ -679,15 +682,10 @@ section .card .card-image img {
   font-style: italic;
 }
 
-/*-------------------- Testimonials section starts------------------- */
-
-
 /*--------------------- Testimonials section Ends---------------------- */
+/*---------- CTA Starts --------- */
 
-/*-------------------- CTA section starts------------------- */
-
-/*--------------------- CTA section Ends---------------------- */
-
+/*---------- CTA Ends --------- */
 /*-------------------- Contact section starts--------------------- */
 .Contact {
   display: flex;
