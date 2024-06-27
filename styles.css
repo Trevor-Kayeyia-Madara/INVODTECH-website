@@ -459,6 +459,77 @@ li {
  width: 40%;
 }
 /*-------------------- Values ends--------------------- */
+
+/*-------------------- Services Starts--------------------- */
+.Services {
+  background-color: #222;
+  /*background-image: url(/assets/srt_neon.jpg);*/
+  background-size: cover;
+  background-position: center;
+  background-image: fill;
+  background-repeat: no-repeat;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.Services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .Services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .Services {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Container styles */
+.ContainerS {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.ContainerS img {
+  width: 100%;
+  height: auto;
+}
+
+.ContainerS h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.ContainerS p {
+  margin: 0 10px 10px 10px;
+  color: #666;
+}
+
+/* Hover effect */
+.ContainerS:hover {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: #fff;
+}
+
+.ContainerS:hover h3,
+.ContainerS:hover p {
+  color: #fff;
+}
+
+/*--------------------- Service ends---------------------- */
+
 /*--------------------- Our Team starts---------------------- */
 .Team {
   min-height: 100vh;
