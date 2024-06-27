@@ -690,7 +690,7 @@ section .card .card-image img {
   margin-top: 30%;
 }
 
-.cta button {
+.cta button {  
   background-color: transparent;
   border: 2px solid white;
   color: white;
