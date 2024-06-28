@@ -259,8 +259,6 @@ a {
   -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
   transition: color 0.2s 0.3s, width 0.3s 0s;
 }
-
-
 /*------------Animations Starts-----------*/
 .cd-modal-action .btn {
   display: inline-block;
