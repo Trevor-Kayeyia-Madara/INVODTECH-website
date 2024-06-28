@@ -6,11 +6,7 @@ var swiper = new Swiper(".slide-content", {
     centeredSlides: 'true',
     fade: 'true',
     grabCursor: 'true',
-   /* pagination: {
-        el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,  
-    },*/
+ 
     loop: true,
     keyboard: {
       enabled: true,
