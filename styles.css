@@ -1014,6 +1014,7 @@ section .card .card-image img {
 .inputBox input[type="submit"]:hover {
   background-color: #0056b3;
 }
+
 /*  Responsive Form*/
 @media (max-width: 1200px) {
   .containerC {
@@ -1044,9 +1045,9 @@ section .card .card-image img {
 }
 
 .Csocial-links a i {
-  font-size: 20px;
-  height: 40px;
-  width: 40px;
+  font-size: 25px;
+  height: 45px;
+  width: 45px;
   display: inline-block;
   background: #ffffff;
   color: #871828;
@@ -1061,7 +1062,9 @@ section .card .card-image img {
 .Csocial-links a i:hover {
   background: #ffe8a2;
   color: var(--maroon);
-  transform: translateY(2px);
+  transform: translateY(2.5px);
+  font-size: 30px;
+
 }
 
 @media (max-width: 991px) {
