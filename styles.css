@@ -364,7 +364,7 @@ section.About-section {
   height: 150px; 
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 20px;
+  margin-right: 40px;
   background-color: transparent; 
 }
 
@@ -374,41 +374,18 @@ section.About-section {
   object-fit: cover;
   border-radius: 50%; 
 }
-/*
-.circleContainer::before {
-  content: '';
-  position: absolute;
-  top: -15px; 
-  left: -15px; 
-  width: calc(100% + 30px); 
-  height: calc(100% + 30px); 
-  border-radius: 50%;
-  border: 5px solid transparent; 
-  background: radial-gradient(circle, transparent 70%, #871828 70%);
-  box-sizing: border-box; 
-  pointer-events: none; 
-}
-*/
+
 .circleText {
   flex: 1; 
   color: #f9f6f0;
   font-family: Roboto, sans-serif;
-  font-size: 20px;
-  padding: 6px;
+  font-size: 25px;
+  padding: 10px;
 }
 
-.About p {
-  color: #f9f6f0;
-  margin-right: 45%;
-  margin-left: 4%;
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
-  padding: 6px;
-  margin-bottom: 10px;
-}
 
-.About h2,
-ul.About {
+.About h2
+ {
   font-family: cursive, sans-serif;
   font-size: 25px;
   font-weight: bold;
@@ -420,37 +397,22 @@ ul.About {
   padding-right: 20%;
   padding-bottom: 4px;
 }
-
-ul {
-  list-style-type: disc;
-  padding-bottom: 10px;
-}
-
-ul.custom-bullets {
-  padding-left: 95px;
-}
-
-li {
-  padding-bottom: 10px;
-}
-
-.About p span a {
-  text-decoration: none;
-  color: var(--cream);
-}
-
 .containerWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px; /* Add gap between containers */
+  gap: 1%; /* Add gap between containers */
   margin-top: 20px; /* Optional: Add some space above the containers */
 }
 
 .ContainerA {
-  width: 45%;
+  width: 43%;
   padding: 20px;
   border: 1px solid maroon;
+  margin: 3px;
+  margin-bottom: 3.5%;
+  margin-left: 3%;
+  margin-right: 3%;
   transition: all 3s;
 }
 
@@ -468,7 +430,7 @@ li {
 }
 
 #leftContainer:hover {
-  background-color: maroon;
+  background-color: transparent;
   color: white;
 }
 
@@ -627,15 +589,14 @@ ul.Values {
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
 }
+
 ul {
   list-style-type: disc;
-  padding-bottom: 5px;
-}
-ul.custom-bullets {
-  padding-right: 5%;
-}
-li {
   padding-bottom: 10px;
+}
+
+ul.custom-bullets {
+  padding-left: 95px;
 }
 
 .image-container {
