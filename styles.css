@@ -71,6 +71,28 @@ html {
   outline-color: #000000;
   box-shadow: 0 0 17px var(--glow-black);
 }
+/*---------------Back to top Arrow Starts-----*/
+.back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}
+/*---------------Back to top Arrow Ends-----*/
 body {
   position: relative;
   content: "";
