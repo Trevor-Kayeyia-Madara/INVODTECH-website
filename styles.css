@@ -1025,6 +1025,27 @@ section .card .card-image img {
   }
 }
 
+.Csocial-links a i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background: #ffffff;
+  color: #871828;
+  line-height: 1;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  width: 40px;height: 40px;
+  transition: 0.3s ease;
+  border-radius: 50%;
+}
+.Csocial-links a i:hover {
+  background: #ffe8a2;
+  color: var(--maroon);
+  transform: translateY(2px);
+}
+
 @media (max-width: 991px) {
   .Contact {
     display: flex;
