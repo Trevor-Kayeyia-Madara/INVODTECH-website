@@ -72,25 +72,29 @@ html {
   box-shadow: 0 0 17px var(--glow-black);
 }
 /*---------------Back to top Arrow Starts-----*/
-.back-to-top {
-  display: none; /* Hidden by default */
+#backToTop {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 99;
-  font-size: 18px;
-  background-color: #333;
-  color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  transition: opacity 0.3s;
+  display: none;
+  background-color: transparent;
+  color: var(--cream); 
+  padding: 10px;
+  border-radius: 15%;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease;
+  border: 2px solid var(--cream);
 }
 
-.back-to-top:hover {
-  background-color: #555;
+#backToTop:hover {
+  background-color: #871828;
+  border: 2px solid var(--cream); 
+  color: #ffffff;
+  transform: rotate(180deg);
+  transition: transform 0.1s ease;
 }
 /*---------------Back to top Arrow Ends-----*/
 body {
@@ -102,7 +106,7 @@ body {
   left: 0;
   z-index: 0;
   font-family: Arial, sans-serif;
-  color: white;
+  color: white;  
 }
 
 .navbar {

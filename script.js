@@ -55,17 +55,24 @@ document.addEventListener('DOMContentLoaded', () => {
   
 });
 //----------- Back-To-Top --------------// 
-// Show or hide the button based on scroll position
-window.onscroll = function() {
-  const backToTopButton = document.getElementById("backToTop");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    backToTopButton.style.display = "block";
-  } else {
-    backToTopButton.style.display = "none";
-  }
-};
+document.addEventListener("DOMContentLoaded", function() {
+  var backToTopBtn = document.getElementById('backToTop');
 
-// Scroll to the top of the page when the button is clicked
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+  window.addEventListener('scroll', function() {
+      // Show button when user scrolls down 20px from the top
+      if (window.scrollY > 20) {
+          backToTopBtn.style.display = 'block';
+      } else {
+          backToTopBtn.style.display = 'none';
+      }
+  });
+
+  backToTopBtn.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default anchor behavior
+      // Smooth scroll to top of page
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  });
+});
