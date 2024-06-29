@@ -126,6 +126,7 @@ body {
   font-size: 1.6rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #34383c;
+  background-image: url(assets/bg_black);
   background-color: #ffffff;
 }
 body.overflow-hidden {

@@ -458,7 +458,17 @@ li {
 /*-------------------- Values ends--------------------- */
 
 /*-------------------- Services Starts--------------------- */
-
+.Services {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/Tr_black.jpg);
+  background-size: cover;
+  background-position: center;
+  background-image: fill;
+  background-repeat: no-repeat;
+}
 
 /*--------------------- Service ends---------------------- */
 
