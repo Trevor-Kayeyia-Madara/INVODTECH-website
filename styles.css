@@ -1167,22 +1167,32 @@ footer {
 
 
 .social-links a i {
-  display: inline-block;
-  text-align: center;
+  font-size: 20px;
   height: 40px;
   width: 40px;
+  display: inline-block;
+  background: #ffffff;
+  color: #871828;
+  line-height: 1;
+  padding: 9px;
+  margin-right: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+/*
   background-color: rgba(255, 255, 255, 0.2);
   padding-top: 6px;
   margin: 4px;
-  text-align: center;
   line-height: 1.6rem;
   border-radius: 50%;
   color: #ffffff;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease;*/
 }
 .social-links a i:hover {
-  color: var(--cream);
-  transform: translateY(-4px);
+  background: #ffe8a2;
+  color: var(--maroon);
+  transform: translateY(2px);
 }
 .footer-copyright,
 .footer-copyright h3 a {
