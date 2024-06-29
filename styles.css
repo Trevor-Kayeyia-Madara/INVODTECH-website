@@ -479,7 +479,9 @@ li {
 .Services {
   height: 100vh;
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 10px;
   align-items: center;
   justify-content: center;
   background-image: url(assets/bg_black.jpg);
@@ -489,8 +491,8 @@ li {
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   color: #000000;
+  z-index: 99;
 }
-
 .service-container {
   background-color: #726a6a;
   border-radius: 10px;
