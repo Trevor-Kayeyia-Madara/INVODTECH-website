@@ -40,7 +40,7 @@ var swiper = new Swiper(".slide-content", {
     },
   });
 
-//------------------------Testimonials--------------------------------------------// 
+//------------Testimonials-------------------// 
 document.addEventListener('DOMContentLoaded', () => {
   let testimonials = document.querySelectorAll('.testimonial');
   let index = 0;
@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var backToTopBtn = document.getElementById('backToTop');
 
   window.addEventListener('scroll', function() {
-      // Show button when user scrolls down 20px from the top
       if (window.scrollY > 20) {
           backToTopBtn.style.display = 'block';
       } else {
@@ -68,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   backToTopBtn.addEventListener('click', function(e) {
-      e.preventDefault(); // Prevent default anchor behavior
-      // Smooth scroll to top of page
+      e.preventDefault(); 
+  
       window.scrollTo({
           top: 0,
           behavior: 'smooth'
