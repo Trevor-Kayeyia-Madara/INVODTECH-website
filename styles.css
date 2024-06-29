@@ -148,14 +148,6 @@ body {
 .navbar li a:hover {
   color: var(--maroon);
 }
-/*
-.navbar a:hover {
-  background-color: maroon;
-  color: white;
-  box-shadow: 0 0 10px maroon;
-}
-
-  */
 
 /* animation background begins */
 .box div {
