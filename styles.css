@@ -445,110 +445,6 @@ section.About-section {
 #leftContainer:hover h2, #rightContainer:hover h2 {
   border-bottom: 1px;
 }
-/*
-section.About-section {
-  margin: 0;
-}
-.About {
-  position: relative;
-  height: auto;
-  align-items: center;
-  background-image: url("assets/bg_black.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.abs-title {
-  font-family: cursive, sans-serif;
-  font-size: 38px;
-  font-weight: bold;
-  text-align: center;
-  color: #871828;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white;
-  padding-right: 20%;
-  margin-bottom: -10px;
-}
-.abs-image img {
-  position: absolute;
-  top: 12%;
-  right: 0;
-  width: 40%;
-}
-
-.About p {
-  color: #f9f6f0;
-  margin-right: 45%;
-  margin-left: 4%;
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
-  padding: 6px;
-  margin-bottom: 10px;
-}
-.About h2,
-ul.About {
-  font-family: cursive, sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  color: #871828;
-  margin-left: 70px;
-  padding: 15px 12px;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white;
-  padding-right: 20%;
-  padding-bottom: 4px;
-}
-ul {
-  list-style-type: disc;
-  padding-bottom: 10px;
-}
-ul.custom-bullets {
-  padding-left: 95px;
-}
-li {
-  padding-bottom: 10px;
-}
-
-.About p span a {
-  text-decoration: none;
-  color: var(--cream);
-}
-
-.ContainerA {
-  width: 45%;
-  padding: 20px;
-  border: 1px solid maroon;
-  transition: all 3s;
-}
-
-#leftContainer {
-  background-color: transparent;
-}
-
-#rightContainer {
-  background-color: maroon;
-  color: white;
-}
-
-.ContainerA:hover {
-  transform: scale(1.05);
-}
-
-#leftContainer:hover {
-  background-color: maroon;
-  color: white;
-}
-
-#leftContainer h2, #rightContainer h2 {
-  transition: all 3s;
-}
-
-#leftContainer:hover h2, #rightContainer:hover h2 {
-  border-bottom: 3px solid white;
-}
-*/
 /*-------------------- About Us ends--------------------- */
 
 /*-------------------- Values starts--------------------- */
@@ -641,16 +537,6 @@ ul.custom-bullets {
   gap: 75px;
   z-index: 100;
 }
-/*
-.service-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  transition: background-color 0.3s ease;
-}
-  */
 .container-wrapperS img {
   width: 120px;
   height: 120px;
@@ -701,7 +587,6 @@ ul.custom-bullets {
   background-position: center;
   background-image: fill;
   background-repeat: no-repeat;
-  /*background-color: var(--black);*/
 }
 
 section .card .card-image {
