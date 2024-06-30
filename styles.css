@@ -452,18 +452,28 @@ section.About-section {
 
 /*-------------------- Values starts--------------------- */
 .Values {
-    background-color: #e6f4f1;
+    background-color: #000000;
     font-family: Arial, sans-serif;
-    color: #374b5a;
+    color: #000000;
    }
+   .vls-title {
+    font-family: cursive, sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    color: #871828;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+      1px 1px 0 white;
+    padding-right: 20%;
+    margin-bottom: 10px;
+  }
    .Values .Vwrap{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 75px;
+    gap: 65px;
     z-index: 100;
    }
  
@@ -476,8 +486,8 @@ section.About-section {
     margin: 50px 0;
   }
   .value {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #fbfbfb;
+    border: 1px solid #f41d1d;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     flex-basis: calc(33.333% - 20px);
@@ -492,7 +502,7 @@ section.About-section {
     box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
   }
   .value h3 {
-    color: #3aa889;
+    color: #871828;
     margin-top: 0;
     font-size: 24px;
     font-weight: bold;
@@ -513,17 +523,6 @@ section.About-section {
   min-height: auto !important;
   align-items: center;
   justify-content: center;
-}
-.vls-title {
-  font-family: cursive, sans-serif;
-  font-size: 38px;
-  font-weight: bold;
-  text-align: center;
-  color: #871828;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white;
-  padding-right: 20%;
-  margin-bottom: -10px;
 }
 .Values p {
   color: #f9f6f0;
