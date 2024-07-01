@@ -111,6 +111,17 @@ body {
   font-family: Arial, sans-serif;
   color: white;
 }
+.tls {
+  text-align: center;
+  background: white;
+  height: 10vh;
+  line-height: 10vh;
+  width: 30vw;
+  margin: 1.5vw 5vw;
+  justify-content: center;
+  margin-left: 60vh;
+  background: linear-gradient(135deg, black, #8c8383, black);
+}
 
 .navbar {
   position: fixed;
