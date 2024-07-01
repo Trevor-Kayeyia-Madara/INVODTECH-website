@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
   font-family: Roboto, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
@@ -358,6 +359,7 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 5px;
   padding-bottom: 5px;
 }
 .circleContainerWrapper {
@@ -587,6 +589,7 @@ ul.custom-bullets {
   background-position: center;
   background-image: fill;
   background-repeat: no-repeat;
+  padding-top: 55px;
   font-family: Arial, sans-serif;
   z-index: 99;
 }
@@ -651,6 +654,7 @@ ul.custom-bullets {
   background-position: center;
   background-image: fill;
   background-repeat: no-repeat;
+  padding-top: 45px;
 }
 section .card .card-image {
   position: relative;
@@ -813,6 +817,7 @@ section .card .card-image img {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding-top: 45px;
 }
 #testimonials {
   width: 100%;
@@ -887,6 +892,7 @@ section .card .card-image img {
   min-height: 100vh;
   background: linear-gradient(to right, #ffe8a2, maroon);
   color: #871828;
+  padding-top: 45px;
 }
 .Contact::before {
   content: "";
