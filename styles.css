@@ -113,15 +113,16 @@ body {
 }
 .tls {
   text-align: center;
-  background: white;
-  height: 10vh;
   line-height: 10vh;
   width: 30vw;
   justify-content: center;
   border: whitesmoke solid;
   margin-left: 75vh;
+  margin-right: 75vh;
+  margin-top: 7px;
   background: linear-gradient(135deg, black, #8c8383, black);
 }
+
 
 .navbar {
   position: fixed;
@@ -349,9 +350,6 @@ button:hover {
 
 /* Services on home page ends */
 /*--------------------- About Us starts---------------------- */
-section.About-section {
-  margin: 0;
-}
 .About {
   position: relative;
   height: auto;
@@ -360,13 +358,12 @@ section.About-section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 5px;
   padding-bottom: 5px;
 }
 .circleContainerWrapper {
   display: flex;
   align-items: center;
-  margin-top: 20px; 
+  margin-top: 55px; 
   margin-left: 4%; 
   margin-right: 4%; 
 }
@@ -655,7 +652,6 @@ ul.custom-bullets {
   background-image: fill;
   background-repeat: no-repeat;
 }
-
 section .card .card-image {
   position: relative;
   height: 140px;
