@@ -804,6 +804,10 @@ button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/*------- Responsive service starts -------------------*/
+
+/*------- Responsive service ends -------------------*/
 /*--------------------- Service ends---------------------- */
 
 /*--------------------- Our Team starts---------------------- */
@@ -1022,7 +1026,101 @@ section .card .card-image img {
   font-size: 1.2em;
   font-style: italic;
 }
+/* Responsive Testimonials */
 
+@media (max-width: 1200px) {
+  .Testimonials .tls {
+    font-size: 2.25rem; /* Slightly smaller font size */
+    margin: 15px auto;
+  }
+
+  .testimonial {
+    padding: 15px;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .Testimonials .tls {
+    font-size: 2rem; /* Smaller font size for tablets */
+    margin: 10px auto;
+  }
+
+  .testimonial {
+    padding: 15px;
+  }
+
+  .testimonial-text {
+    font-size: 0.875rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.75rem;
+  }
+
+  .cta button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Testimonials .tls {
+    font-size: 1.75rem;
+    margin: 10px auto;
+  }
+
+  .testimonial {
+    padding: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 0.875rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.75rem;
+  }
+
+  .cta button {
+    width: 100%; 
+    padding: 15px;
+    font-size: 1.25rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .Testimonials .tls {
+    font-size: 1.5rem; 
+    margin: 5px auto;
+  }
+
+  .testimonial {
+    padding: 8px;
+  }
+
+  .testimonial-text {
+    font-size: 0.75rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.65rem;
+  }
+
+  .cta button {
+    width: 100%; 
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
 /*--------------------- Testimonials section Ends---------------------- */
 
 /*---------- CTA Starts --------- */
