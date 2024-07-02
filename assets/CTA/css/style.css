@@ -272,7 +272,7 @@ a {
   text-align: center;
 }
 /*------------Animations Starts-----------*/
-
+  
 @keyframes zoomColorChange {
   0% {
       transform: scale(1);
@@ -284,31 +284,7 @@ a {
   }
   50% {
       transform: scale(1.4);
-      background-color: cream;
-  }
-  75% {
-      transform: scale(1.2);
-      background-color: maroon;
-  }
-  100% {
-      transform: scale(1);
-      background-color: #333;
-  }
-}
-
-/* Define the color "cream" */
-@keyframes zoomColorChange {
-  0% {
-      transform: scale(1);
-      background-color: #333;
-  }
-  25% {
-      transform: scale(1.2);
-      background-color: maroon;
-  }
-  50% {
-      transform: scale(1.4);
-      background-color: #fffdd0; /* cream color */
+      background-color: #fffdd0; 
       color:black;
   }
   75% {
