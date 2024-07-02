@@ -1050,7 +1050,7 @@ section .card .card-image img {
 /* Tablets */
 @media (max-width: 992px) {
   .Testimonials .tls {
-    font-size: 2rem; /* Smaller font size for tablets */
+    font-size: 2rem;
     margin: 10px auto;
   }
 
@@ -1096,7 +1096,6 @@ section .card .card-image img {
   }
 }
 
-/* Extra small devices */
 @media (max-width: 480px) {
   .Testimonials .tls {
     font-size: 1.5rem; 
