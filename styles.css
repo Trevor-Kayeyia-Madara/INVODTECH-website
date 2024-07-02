@@ -1030,7 +1030,7 @@ section .card .card-image img {
 
 @media (max-width: 1200px) {
   .Testimonials .tls {
-    font-size: 2.25rem; /* Slightly smaller font size */
+    font-size: 2.25rem; 
     margin: 15px auto;
   }
 
@@ -1047,7 +1047,7 @@ section .card .card-image img {
   }
 }
 
-/* Tablets */
+
 @media (max-width: 992px) {
   .Testimonials .tls {
     font-size: 2rem;
