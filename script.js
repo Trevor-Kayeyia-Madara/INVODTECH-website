@@ -35,7 +35,15 @@ var swiper = new Swiper(".slide-content", {
       dynamicBullets: true,
     },
   });
+//------------ Hamburger menu --------------------//
+document.addEventListener('DOMContentLoaded', function() {
+  const toggler = document.querySelector('.navbar-toggler');
+  const menu = document.querySelector('.navbar ul');
 
+  toggler.addEventListener('click', function() {
+    menu.classList.toggle('show');
+  });
+});
 //------------Testimonials-------------------// 
 document.addEventListener('DOMContentLoaded', () => {
   let testimonials = document.querySelectorAll('.testimonial');

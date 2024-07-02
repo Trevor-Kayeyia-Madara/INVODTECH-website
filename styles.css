@@ -115,6 +115,7 @@ body {
 .tls {
   text-align: center;
   line-height: 10vh;
+  font-size: 25px;
   width: 30vw;
   justify-content: center;
   border: whitesmoke solid;
@@ -138,6 +139,8 @@ body {
 }
 .navbar ul {
   list-style-type: none;
+  display: flex;
+  gap: 10px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -163,7 +166,34 @@ body {
 .navbar li a:hover {
   color: var(--maroon);
 }
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+}
+/*------ Navbar Responsive--------*/
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    width: 200px;
+    border-radius: 5px;
+  }
 
+  .navbar ul.show {
+    display: flex;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+}
+/*------ Navbar Responsive--------*/
 /* animation background begins */
 .box div {
   position: absolute;
@@ -241,6 +271,7 @@ body {
     opacity: 0.7;
   }
 }
+
 /* animation background ends */
 
 /* Home section content */
@@ -265,8 +296,8 @@ body {
 }
 
 .content h1 {
-  font-size: 30px;
-  margin-top: 55px;
+  font-size: 35px;
+  margin-top: 10%;
   margin-bottom: 20px;
   margin-left: 115px;
 }
@@ -297,7 +328,7 @@ button:hover {
 }
 /*-------- Services on home page starts------ */
 .container-wrapper {
-  margin-top: 135px;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
