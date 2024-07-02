@@ -125,7 +125,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Source Sans Pro", sans-serif;
-  color: #34383c;
+   color: #34383c;
   background-image: url(assets/bg_black);
   background-color: #ffffff;
 }
@@ -246,6 +246,7 @@ a {
   height: 4em;
   background-color: #34383c;
 }
+
 .cd-modal-action .btn {
   width: 12.5em;
   border-radius: 5rem;
@@ -259,9 +260,6 @@ a {
   -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
   -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
   transition: color 0.2s 0.3s, width 0.3s 0s;
-}
-/*------------Animations Starts-----------*/
-.cd-modal-action .btn {
   display: inline-block;
   padding: 10px 20px;
   font-size: 18px;
@@ -275,6 +273,7 @@ a {
   transition: background-color 0.5s;
   text-align: center;
 }
+/*------------Animations Starts-----------*/
 
 @keyframes zoomColorChange {
   0% {
