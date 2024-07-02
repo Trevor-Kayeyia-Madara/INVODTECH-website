@@ -271,8 +271,7 @@ a {
   transition: background-color 0.5s;
   text-align: center;
 }
-/*------------Animations Starts-----------*/
-  
+/*--------btn Animations Starts-----------*/ 
 @keyframes zoomColorChange {
   0% {
       transform: scale(1);
@@ -294,6 +293,43 @@ a {
   100% {
       transform: scale(1);
       background-color: #333;
+  }
+}
+
+
+/*==========  Responsiveness ==========*/
+@media (max-width: 1200px) {
+  .cd-modal-action .btn {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cd-modal-action .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cd-modal-action .btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cd-modal-action .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cd-modal-action .btn {
+    font-size: 11px;
+    padding: 5px 10px;
   }
 }
 /*------------Animations Ends-----------*/
