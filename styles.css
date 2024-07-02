@@ -571,6 +571,65 @@ button:hover {
 #leftContainer:hover h2, #rightContainer:hover h2 {
   border-bottom: 1px;
 }
+
+/*-------------- About Us responsiveness ends --------*/
+@media (max-width: 992px) {
+  .circleContainer {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circleText p {
+    font-size: 14px;
+  }
+
+  .ContainerA {
+    padding: 15px;
+  }
+
+  .ContainerA h2 {
+    font-size: 20px;
+  }
+
+  .ContainerA p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .circleContainerWrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .circleContainer {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circleText p {
+    font-size: 12px;
+  }
+
+  .containerWrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ContainerA {
+    padding: 10px;
+  }
+
+  .ContainerA h2 {
+    font-size: 18px;
+  }
+
+  .ContainerA p {
+    font-size: 12px;
+  }
+}
+/*-------------- About Us responsiveness ends --------*/
+
 /*-------------------- About Us ends--------------------- */
 
 /*-------------------- Values starts--------------------- */
@@ -636,6 +695,51 @@ button:hover {
     font-size: 18px;
     line-height: 1.5;
   }
+
+  /*---- Values Responsive design starts ----- */
+  @media (max-width: 992px) {
+    .Values .tls {
+      font-size: 30px;
+    }
+  
+    .value {
+      padding: 15px;
+    }
+  
+    .value h3 {
+      font-size: 20px;
+    }
+  
+    .value p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Values .tls {
+      font-size: 26px;
+    }
+  
+    .Vwrap {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .value {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .value h3 {
+      font-size: 22px;
+    }
+  
+    .value p {
+      font-size: 12px;
+    }
+  }
+   /*------ Values Responsive design ends----- */
 /*-------------------- Values ends--------------------- */
 
 /*-------------------- Services Starts--------------------- */
