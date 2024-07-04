@@ -101,7 +101,7 @@ html {
   border: 2px solid var(--cream);
   color: #ffffff;
   transform: rotate(180deg);
-  transition: transform 1s ease;
+  transition: transform .2s ease;
 }
 /*---------------Back to top Arrow Ends-----*/
 body {
@@ -202,11 +202,15 @@ body {
 /*---------Library starts ---------------*/
 #particles-js
 {
-  height: 100%;
-  background-color: none;
-  z-index: -1;
+  position: absolute;
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: -1000;
 }
-
 /*----------Library End  ----------------*/
 
 /*
