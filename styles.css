@@ -52,6 +52,17 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+/*---------Library starts ---------------*/
+  #particles-js
+  {
+    height: 100%;
+    background-color: none;
+    z-index: -1;
+  }
+
+/*----------Library End  ----------------*/
+
 .logo {
   height: 5%;
   width: 3%;
@@ -157,6 +168,7 @@ body {
   color: #fff;
   font-size: 16px;
   padding: 8px 12px;
+  z-index: 1;
   border-radius: 100px;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -195,6 +207,7 @@ body {
 }
 /*------ Navbar Responsive--------*/
 /* animation background begins */
+
 .box div {
   position: absolute;
   width: 30px;
@@ -271,7 +284,6 @@ body {
     opacity: 0.7;
   }
 }
-
 /* animation background ends */
 
 /* Home section content */
@@ -281,6 +293,7 @@ body {
   background-image: url("assets/homebg1.jpg");
   background-size: cover;
   filter: blur(0.2px);
+  z-index: 10;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -292,7 +305,7 @@ body {
   align-items: center;
   text-align: right;
   color: white;
-  z-index: 1;
+ 
 }
 
 .content h1 {
@@ -300,12 +313,14 @@ body {
   margin-top: 10%;
   margin-bottom: 20px;
   margin-left: 115px;
+ 
 }
 
 .content p {
   font-size: 35px;
   margin-bottom: 40px;
   margin-left: 20px;
+ 
 }
 .content span {
   color: var(--maroon);
@@ -320,6 +335,7 @@ button {
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
+
 }
 
 button:hover {
@@ -333,6 +349,7 @@ button:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
+
 }
 .container {
   border: 1.5px solid grey;
@@ -344,6 +361,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
+
 }
 
 .container:hover {
@@ -356,6 +374,7 @@ button:hover {
   transition: fill 0.3s ease;
   transition: transform 0.3s ease;
   color: var(--white);
+
 }
 .material-symbols-outlined:hover {
   color: var(--maroon);
