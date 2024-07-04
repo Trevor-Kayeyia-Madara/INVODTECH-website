@@ -524,13 +524,14 @@ button:hover {
   flex: 1; 
   color: #f9f6f0;
   font-family: Roboto, sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px;
 }
 .circleText span {
-  font-size: 38px;
+  font-size: 35px;
   color: var(--cream);
   font-weight: bolder;
+  margin-bottom: 2px;
 }
 
 .About h2
