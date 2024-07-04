@@ -591,7 +591,7 @@ button:hover {
   border-bottom: 1px;
 }
 
-/*-------------- About Us responsiveness ends --------*/
+/*-------------- About Us responsiveness starts--------*/
 @media (max-width: 992px) {
   .circleContainer {
     width: 150px;
