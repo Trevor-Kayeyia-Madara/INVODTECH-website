@@ -203,15 +203,14 @@ body {
 #particles-js
 {
   position: absolute;
-  width: 30%;
-  height: 20%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  z-index: -1000;
+  z-index: -100;
 }
-/*----------Library End  ----------------*/
+/*----------Library Ends  ----------------*/
 
 /*
 .box div {
