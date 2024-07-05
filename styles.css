@@ -272,7 +272,7 @@ button:hover {
 }
 /*-------- Services on home page starts------ */
 .container-wrapper {
-  margin-top: 5%;
+  margin-top: -1%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -409,9 +409,9 @@ button:hover {
     font-size: 10px;
   }
 }
-/*------- Home Responsivenes End ------ */
-
 /* Services on home page ends */
+
+/*------- Home Responsivenes End ------ */
 /*--------------------- About Us starts---------------------- */
 .About {
   position: relative;
@@ -1019,8 +1019,6 @@ section .card .card-image img {
     flex: 1 1 calc(33.333% - 20px);
   }
 }
-
-/*
 @media (max-width: 1200px) {
   .Testimonials .tls {
     font-size: 2.25rem; 
@@ -1039,31 +1037,6 @@ section .card .card-image img {
     font-size: 0.85rem;
   }
 }
-
-
-@media (max-width: 992px) {
-  .Testimonials .tls {
-    font-size: 2rem;
-    margin: 10px auto;
-  }
-
-  .testimonial {
-    padding: 15px;
-  }
-
-  .testimonial-text {
-    font-size: 0.875rem;
-  }
-
-  .testimonial-author {
-    font-size: 0.75rem;
-  }
-
-  .cta button {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 768px) {
   .Testimonials .tls {
     font-size: 1.75rem;
@@ -1088,7 +1061,6 @@ section .card .card-image img {
     font-size: 1.25rem;
   }
 }
-
 @media (max-width: 480px) {
   .Testimonials .tls {
     font-size: 1.5rem; 
@@ -1113,7 +1085,6 @@ section .card .card-image img {
     font-size: 1rem;
   }
 }
-  */
 /*--------------------- Testimonials section Ends---------------------- */
 /*-------------------- Contact section starts--------------------- */
 .Contact {
