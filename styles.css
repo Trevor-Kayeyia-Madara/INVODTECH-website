@@ -312,7 +312,7 @@ button:hover {
 
 .container .name {
   font-size: 1.2em;
-  color: var(--white);
+  color: #ffffff;
   text-align: center;
   transition: color 0.3s ease;
   z-index: 3;
