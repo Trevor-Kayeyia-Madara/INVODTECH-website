@@ -79,3 +79,63 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+
+//===================  Chatbox Js ==========================//
+document.addEventListener('DOMContentLoaded', function() {
+  const chatIcon = document.getElementById('chat-icon');
+  const chatInterface = document.getElementById('chat-interface');
+  const messagesDiv = document.getElementById('messages');
+  const userInput = document.getElementById('userInput');
+  const sendButton = document.getElementById('sendButton');
+  const whatsappIcon = document.getElementById('whatsapp-icon');
+
+  // Toggle chat interface visibility
+  chatIcon.addEventListener('click', function() {
+      if (chatInterface.style.display === 'block') {
+          chatInterface.style.display = 'none';
+      } else {
+          chatInterface.style.display = 'block';
+      }
+  });
+
+  // Function to add a message to the chat
+  function addMessage(message, className = '') {
+      const messageElement = document.createElement('div');
+      messageElement.classList.add('message');
+      if (className) {
+          messageElement.classList.add(className);
+      }
+      messagesDiv.appendChild(messageElement);
+      return messageElement;
+  }
+
+  // Function to simulate typing animation with typewriter effect
+  function simulateTyping(text, callback, startDelay = 3000) {
+      setTimeout(() => {
+          const typingSpeed = 150; // Adjust speed for typewriter effect
+          let index = 0;
+          const messageElement = addMessage('');
+          const typingInterval = setInterval(() => {
+              if (index < text.length) {
+                  messageElement.textContent += text[index];
+                  index++;
+              } else {
+                  clearInterval(typingInterval);
+                  callback();
+              }
+          }, typingSpeed);
+      }, startDelay);
+  }
+
+  // Function to handle sending message
+  sendButton.addEventListener('click', function() {
+      const userMessage = userInput.value.trim();
+      if (userMessage !== '') {
+          addMessage(userMessage); // Display user message
+          userInput.value = ''; // Clear input field
+          simulateTyping("Thank you for contacting InvodTech Ltd! For more information reach out to us at https://invodtech.com/ or Click the link below 👇", () => {
+              whatsappIcon.style.display = 'block'; // Show WhatsApp icon after typing animation
+          }, 3000); // 3 seconds delay before typing animation starts
+      }
+  });
+});

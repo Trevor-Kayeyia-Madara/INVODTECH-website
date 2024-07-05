@@ -1614,3 +1614,101 @@ footer {
   }
 }
 /*-------------------- Footer section ends ------------------- */
+
+/* ----  Chatbox Section Starts --- */
+#chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#chat-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+#chat-interface {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  color: black;
+}
+
+#messages {
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: transparent;
+  color: black;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: black;
+}
+
+#whatsapp-icon {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#whatsapp-icon img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  animation: zoom-in-out 0.6s infinite alternate;
+}
+
+.message {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  color: black;
+}
+
+.typing {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+@keyframes zoom-in-out {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+
+/* ----  Chatbox Section Responsiveness --- */
+
+/* ----  Chatbox Section Ends --- */
