@@ -411,7 +411,7 @@ button:hover {
 }
 /* Services on home page ends */
 
-/*-------------- About Us starts---------------------- */
+/*-------------- About Us starts--------------- */
 .About {
   position: relative;
   height: auto;
@@ -521,7 +521,7 @@ button:hover {
   border-bottom: 1px;
 }
 
-/*-------------- About Us responsiveness starts--------*/
+/*------ About Us responsiveness starts -----*/
 @media (max-width: 992px) {
   .circleContainer {
     width: 150px;
@@ -687,7 +687,6 @@ button:hover {
       font-size: 12px;
     }
   }
-   /*------ Values Responsive design ends----- */
 /*-------------------- Values ends--------------------- */
 
 /*-------------------- Services Starts--------------------- */
