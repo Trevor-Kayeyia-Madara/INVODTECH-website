@@ -395,6 +395,7 @@ button:hover {
   color: var(--white);
   text-align: center;
   transition: color 0.3s ease;
+  z-index: 3;
 }
 .name:hover {
   color: var(--white);
@@ -407,7 +408,6 @@ button:hover {
 .container:hover {
   color: grey;
 }
-
 /*------- Home Responsivenes Starts ------ */
 @media (max-width: 992px) {
   .Home h1 {
