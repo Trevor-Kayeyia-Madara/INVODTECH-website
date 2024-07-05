@@ -310,14 +310,14 @@ button:hover {
   z-index: 2;
 }
 
-.name {
+.container .name {
   font-size: 1.2em;
   color: var(--white);
   text-align: center;
   transition: color 0.3s ease;
   z-index: 3;
 }
-.name:hover {
+.container .name:hover {
   color: var(--white);
 }
 
@@ -930,15 +930,19 @@ section .card .card-image img {
   background-image: fill;
   background-repeat: no-repeat;
   background-image: url(assets/srt_neon.jpg);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   padding-top: 45px;
 }
-#testimonials {
+
+#Testimonials {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -948,35 +952,75 @@ section .card .card-image img {
 .testimonial {
   width: 100%;
   max-width: 600px;
-  padding: 40px;
+  padding: 20px;
   border-radius: 20px;
   background: linear-gradient(135deg, maroon, #333, #ffe8a2);
   color: #fff;
   text-align: center;
   position: absolute;
   opacity: 0;
-  /*transition: opacity 10s;*/
   transform: translateX(100%);
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-  margin-top: 7%;
-  margin-left: 30%;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
+
 .testimonial.active {
   opacity: 1;
   transform: translateX(0);
 }
 
 .testimonial-text {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
 .testimonial-author {
-  font-size: 1.2em;
+  font-size: 1em;
   font-style: italic;
 }
-/* Responsive Testimonials */
+/*---------- CTA Starts --------- */
+.cta {
+  text-align: center;
+  margin-top: 30%;
+}
 
+.cta button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s;
+  margin-bottom: -95%;
+}
+
+.cta button:hover {
+  background-color: var(--maroon);
+  border: 1px solid maroon;
+  color: var(--white);
+}
+/*---------- CTA Ends --------- */
+/* Responsive Testimonials */
+@media (min-width: 600px) {
+  .Testimonials {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  .testimonial {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+}
+
+/*
 @media (max-width: 1200px) {
   .Testimonials .tls {
     font-size: 2.25rem; 
@@ -1069,30 +1113,8 @@ section .card .card-image img {
     font-size: 1rem;
   }
 }
+  */
 /*--------------------- Testimonials section Ends---------------------- */
-
-/*---------- CTA Starts --------- */
-.cta {
-  text-align: center;
-  margin-top: 30%;
-}
-
-.cta button {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.5s;
-}
-
-.cta button:hover {
-  background-color: var(--maroon);
-  border: 1px solid maroon;
-  color: var(--white);
-}
-/*---------- CTA Ends --------- */
 /*-------------------- Contact section starts--------------------- */
 .Contact {
   display: flex;
