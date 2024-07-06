@@ -1711,36 +1711,34 @@ input[type="text"] {
 
 /* ----  Chatbox Section Responsiveness --- */
 @media (max-width: 576px) {
-  /* For smaller phones */
   #chat-interface {
-      max-width: 100%; /* Adjust maximum width for smaller screens */
-      width: 100%; /* Take full width on smaller screens */
-      right: 0; /* Align to right edge */
-      left: 0; /* Align to left edge */
-      border-radius: 0; /* Remove border radius */
+      max-width: 100%; 
+      width: 100%; 
+      right: 0; 
+      left: 0; 
+      border-radius: 0; 
   }
 
   #chat-icon {
-      right: 10px; /* Adjust right position */
+      right: 10px; 
   }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
-  /* For medium-sized devices like tablets */
+
   #chat-interface {
-      max-width: 80%; /* Adjust maximum width for tablets */
-      right: 20px; /* Adjust right position */
+      max-width: 80%; 
+      right: 20px; 
   }
 
   #chat-icon {
-      right: 20px; /* Adjust right position */
+      right: 20px; 
   }
 }
 
 @media (min-width: 993px) {
-  /* For larger devices (default styles already apply) */
   #chat-icon {
-      right: 20px; /* Adjust right position */
+      right: 20px;
   }
 }
 
