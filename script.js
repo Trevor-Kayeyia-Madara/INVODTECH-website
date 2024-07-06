@@ -109,10 +109,9 @@ document.addEventListener('DOMContentLoaded', function() {
       return messageElement;
   }
 
-  // Function to simulate typing animation with typewriter effect
   function simulateTyping(text, callback, startDelay = 3000) {
       setTimeout(() => {
-          const typingSpeed = 150; // Adjust speed for typewriter effect
+          const typingSpeed = 150; //  For typewriter effect
           let index = 0;
           const messageElement = addMessage('');
           const typingInterval = setInterval(() => {
