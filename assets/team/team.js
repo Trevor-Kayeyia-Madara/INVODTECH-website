@@ -29,3 +29,8 @@ const swiper = new Swiper('.slider-wrapper', {
       }
     }
   }); 
+
+     // navbar menu on smaller screens
+     document.querySelector('.navbar-toggler').addEventListener('click', function() {
+      document.querySelector('.navbar-menu').classList.toggle('show');
+    });

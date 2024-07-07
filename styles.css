@@ -117,18 +117,7 @@ body {
   font-family: Arial, sans-serif;
   color: white;
 }
-.tls {
-  text-align: center;
-  line-height: 10vh;
-  font-size: 25px;
-  width: 30vw;
-  justify-content: center;
-  border: whitesmoke solid;
-  margin-left: 75vh;
-  margin-right: 75vh;
-  margin-top: 7px;
-  background: linear-gradient(135deg, black, #8c8383, black);
-} 
+
 
 .navbar {
   position: fixed;
