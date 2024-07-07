@@ -1786,43 +1786,34 @@ footer {
 
 
 /* ----  Chatbox Section Responsiveness --- */
-@media (max-width: 576px) {
+@media only screen and (max-width: 1200px) {
+  /* Styles for laptops and smaller screens */
+  /* Example adjustments */
   #chat-interface {
-      max-width: 100%; 
-      width: 100%; 
-      right: 0; 
-      left: 0; 
-      border-radius: 0; 
-  }
-
-  #chat-icon {
-      right: 10px; 
+      width: 80%;
+      margin: 0 auto;
   }
 }
 
-@media (min-width: 577px) and (max-width: 992px) {
-
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  /* Example adjustments */
   #chat-interface {
-      max-width: 80%; 
-      right: 20px; 
-  }
-
-  #chat-icon {
-      right: 20px; 
+      width: 90%;
   }
 }
-@media (max-width: 600px) {
+
+@media only screen and (max-width: 480px) {
+  /* Styles for phones and smaller screens */
+  /* Example adjustments */
   #chat-interface {
       width: 100%;
-      bottom: 0;
-      right: 0;
-      border-radius: 0;
   }
-}
-
-@media (min-width: 993px) {
-  #chat-icon {
-      right: 20px;
+  #userInput {
+      width: 70%;
+  }
+  #sendButton {
+      width: 28%;
   }
 }
 

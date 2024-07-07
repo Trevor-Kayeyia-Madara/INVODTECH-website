@@ -232,6 +232,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const sendButton = document.getElementById("sendButton");
   const messages = document.getElementById("messages");
 
+  let isGreetingDisplayed = false;
+
   // Show chat interface when chat icon is clicked
   chatIcon.addEventListener("click", function() {
       chatInterface.style.display = "block";
@@ -255,39 +257,60 @@ document.addEventListener("DOMContentLoaded", function() {
       // Clear input field after sending
       userInput.value = "";
 
-      // Randomize typing animation duration between 4 to 7 seconds
-      const typingDuration = Math.floor(Math.random() * 4) + 4; // Random number between 4 to 7
-      setTimeout(() => {
-          displayMessage("Typing...", 'right', true);
-
-          // Simulate typing animation and show automatic response
+      if (!isGreetingDisplayed) {
+          // Display typing animation after 4 seconds
           setTimeout(() => {
-              removeTypingAnimation();
+              displayMessage("Typing...", 'right', true);
 
-              // Determine greeting based on time of day
-              const currentTime = new Date().getHours();
-              let greeting;
-              if (currentTime < 12) {
-                  greeting = "Good Morning";
-              } else {
-                  greeting = "Good Afternoon";
-              }
-
-              // Prepare auto response based on user input and time of day
-              let autoResponse;
-              autoResponse = `${greeting},<br>Thank you for contacting InvodTech Ltd! For more information reach out to us at http://www.invodtech.com or Click the link below 👇`;
-
-              // Display automatic response after 3 seconds
+              // Simulate typing animation and show rest of the auto response
               setTimeout(() => {
-                  displayMessage(autoResponse, 'right');
+                  removeTypingAnimation();
 
-                  // Show WhatsApp icon below the auto response
-                  displayWhatsAppIcon();
-              }, 3000); // 3 seconds for auto response to appear
+                  // Display initial greeting and "How may I help you today?"
+                  const currentTime = new Date().getHours();
+                  let greeting;
+                  if (currentTime < 12) {
+                      greeting = "Good Morning";
+                  } else {
+                      greeting = "Good Afternoon";
+                  }
+                  const initialResponse = `${greeting},<br>How may I help you today?`;
+                  displayMessage(initialResponse, 'right');
 
-          }, typingDuration * 1000); // Convert seconds to milliseconds for setTimeout
+                  isGreetingDisplayed = true;
 
-      }, 0); // No delay for typing animation to appear
+                  // Event listener for next user message after initial response
+                  userInput.addEventListener("keyup", handleNextMessageOnEnter);
+                  sendButton.addEventListener("click", handleNextMessage);
+
+              }, 2000); // 2 seconds for typing animation
+          }, 4000); // 4 seconds delay before typing animation starts
+      } else {
+          handleNextMessage();
+      }
+  }
+
+  // Function to handle next user message
+  function handleNextMessage() {
+      // Display final auto response
+      const finalResponse = "Thank you for contacting InvodTech Ltd! For more information reach out to us at http://www.invodtech.com or Click the link below 👇";
+      displayMessage(finalResponse, 'right');
+
+      // Display WhatsApp icon below the final auto response
+      setTimeout(() => {
+          displayWhatsAppIcon();
+      }, 1000); // Delay to ensure final response is displayed before WhatsApp icon
+
+      // Remove event listeners after message is sent
+      userInput.removeEventListener("keyup", handleNextMessageOnEnter);
+      sendButton.removeEventListener("click", handleNextMessage);
+  }
+
+  // Event listener for Enter key in input field after initial response
+  function handleNextMessageOnEnter(event) {
+      if (event.key === "Enter") {
+          handleNextMessage();
+      }
   }
 
   // Event listener for Enter key in input field
@@ -302,12 +325,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Event listener to reset conversation when chat box is closed
   function resetConversation() {
-      const exemptionMessage = "I'm exempt from resetting the conversation";
-      const lastMessage = messages.lastElementChild.querySelector('.message.left');
-      if (!lastMessage || lastMessage.textContent.trim() !== exemptionMessage) {
-          // Clear all messages in the chat interface
-          messages.innerHTML = "";
-      }
+      messages.innerHTML = ""; // Clear all messages in the chat interface
+      isGreetingDisplayed = false; // Reset greeting displayed flag
   }
 
   // Hide chat interface when clicking outside of it
@@ -315,7 +334,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (!chatInterface.contains(event.target) && !chatIcon.contains(event.target)) {
           chatInterface.style.display = "none";
           chatIcon.style.display = "block"; // Show chat icon again
-          resetConversation(); // Reset conversation when chat box is closed, excluding exemptions
+          resetConversation(); // Reset conversation when chat box is closed
       }
   });
 
