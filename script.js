@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Function to handle next user message
   function handleNextMessage() {
  
-    const finalResponse = "Thank you for contacting InvodTech Ltd! For more information about your request reach out to us on Instagram @invod.tech or Via WhatsApp 👇";
+    const finalResponse = "Thank you for your feedback! For more information about your request reach out to us on Instagram @invod.tech or Via WhatsApp 👇";
     displayMessage(finalResponse, 'right');
 
    

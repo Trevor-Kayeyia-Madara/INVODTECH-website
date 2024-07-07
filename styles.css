@@ -1790,7 +1790,7 @@ footer {
   height: 12dvh;
   position: absolute;
   top: -1px;
-  bottom: -3px;
+  bottom: -3px; 
 }
 
 .message.left img {
