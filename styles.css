@@ -86,14 +86,15 @@ html {
   display: none;
   background-color: transparent;
   color: var(--cream);
-  padding: 8px;
+  padding: 6px;
   border-radius: 15%;
   font-size: 20px;
   text-align: center;
   line-height: 1;
   text-decoration: none;
   transition: background-color 3s ease, color 5s ease;
-  border: 2px solid var(--cream);
+  border:  2px solid var(--cream);
+  cursor: pointer;
 }
 
 #backToTop:hover {
@@ -102,6 +103,7 @@ html {
   color: #ffffff;
   transform: rotate(180deg);
   transition: transform .2s ease;
+  cursor: pointer;
 }
 /*---------------Back to top Arrow Ends-----*/
 body {
@@ -1616,97 +1618,169 @@ footer {
 /*-------------------- Footer section ends ------------------- */
 
 /* ----  Chatbox Section Starts --- */
+/*
 #chat-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 12dvh;
+  margin-right: -10px;
   z-index: 1000;
   cursor: pointer;
 }
 
 #chat-icon img {
-  width: 50px;
-  height: 50px;
+  width: 6dvh;
+  height: 6dvh;
+  border-radius: 50%;
+  padding: 3px;
+  border: 2px solid var(--maroon);
+}
+*/
+
+#chat-icon {
+  position: fixed;
+  bottom: 12dvh;
+  right: 20px;
+  margin-right: -10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+#chat-icon img {
+  width: 6dvh;
+  height: 6dvh;
+  border-radius: 50%;
+  padding: 3px;
+  border: 2px solid var(--maroon);
 }
 
 #chat-interface {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 80px;
+  bottom: 80px;
+  right: 20px;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  overflow: hidden;
+}
+
+#chat-header {
+  background-color: #800000; /* Maroon color */
+  color: white;
+  text-align: center;
+  font-weight: bold;
   padding: 10px;
-  color: black;
+  position: relative;
+}
+
+.header-line {
+  display: inline-block;
+  width: 10vh;
+  height: 0.5px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+.chat-title {
+  vertical-align: middle;
+  margin: 0 5px;
 }
 
 #messages {
-  max-height: 200px;
+  max-height: 200dvh;
   overflow-y: auto;
-  background-color: transparent;
-  color: black;
+  padding: 10px;
+  border-bottom: 1px solid #871828;
 }
 
-input[type="text"] {
-  width: calc(100% - 20px);
-  padding: 8px;
-  margin: 10px 0;
+.chat-input-container {
+  display: flex;
+  margin-top: 2px;
+  padding: 5px;
+}
+
+
+#userInput {
+  flex: 1;
+  margin-top: 2%;
+  z-index: 3;
   border: 1px solid #ccc;
-  border-radius: 3px;
-  color: black;
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 7px;
 }
 
-#whatsapp-icon {
-  display: none;
-  margin-top: 10px;
-  text-align: center;
-}
-
-#whatsapp-icon img {
-  width: 50px;
-  height: 50px;
+#sendButton {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
   cursor: pointer;
-  animation: zoom-in-out 0.6s infinite alternate;
+}
+
+.message-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message-container.left {
+  justify-content: flex-start;
+}
+
+.message-container.right {
+  justify-content: flex-end;
 }
 
 .message {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 5px;
-  margin-bottom: 5px;
-  border-radius: 3px;
-  color: black;
+  max-width: 70dvw;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 2px;
 }
 
-.typing {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: black;
-  border-radius: 50%;
-  animation: blink 1s infinite;
+.message.left {
+  background-color: #FFA500; 
 }
 
-@keyframes blink {
-  0%, 100% {
-      opacity: 0;
-  }
-  50% {
-      opacity: 1;
-  }
+.message.right {
+  background-color: #007BFF; 
+  color: white;
+  margin-bottom: 3px; 
+  border-radius: 10px; 
+  max-width: 80%; 
+  padding: 10px
 }
 
-@keyframes zoom-in-out {
-  0% {
-      transform: scale(1);
-  }
-  100% {
-      transform: scale(1.1);
-  }
+.message-container.right {
+  justify-content: flex-end;
 }
+
+.message img {
+  width: 12dvw;
+  height: 12dvh;
+  position: absolute;
+  top: -1px;
+  bottom: -3px;
+}
+
+.message.left img {
+  left: 5px;
+}
+
+.message.right img {
+  right: 5px;
+}
+
+.message-time {
+  font-size: 10px;
+  text-align: right;
+  margin-top: 5px;
+}
+
 
 
 /* ----  Chatbox Section Responsiveness --- */
@@ -1733,6 +1807,14 @@ input[type="text"] {
 
   #chat-icon {
       right: 20px; 
+  }
+}
+@media (max-width: 600px) {
+  #chat-interface {
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      border-radius: 0;
   }
 }
 
