@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const message = document.createElement("div");
       message.className = "message right whatsapp-icon";
       const whatsappLink = document.createElement("a");
-      whatsappLink.href = "https://wa.me/254756582435";
+      whatsappLink.href = "https://wa.me/254790728763";
       whatsappLink.target = "Whatsapp";
       const whatsappIcon = document.createElement("img");
       whatsappIcon.src = "assets/services/whatsapp.jfif";
