@@ -238,6 +238,7 @@ document.addEventListener("DOMContentLoaded", function() {
   chatIcon.addEventListener("click", function() {
     chatInterface.style.display = "block";
     chatIcon.style.display = "none"; // Hide chat icon when chat interface is shown
+    userInput.focus(); // Focus on the input field
   });
 
   // Function to send message
@@ -284,19 +285,19 @@ document.addEventListener("DOMContentLoaded", function() {
       } else {
         handleNextMessage();
       }
-    }, 8000); // 2 seconds for typing animation
+    }, 7000); // 2 seconds for typing animation
   }
 
   // Function to handle next user message
   function handleNextMessage() {
     // Display final auto response
-    const finalResponse = "Thank you for contacting InvodTech Ltd! For more information reach out to us at http://www.invodtech.com or Click the link below 👇";
+    const finalResponse = "Thank you for contacting InvodTech Ltd! For more information about your request reach out to us on Instagram @invod.tech or Via WhatsApp 👇";
     displayMessage(finalResponse, 'right');
 
     // Display WhatsApp icon below the final auto response
     setTimeout(() => {
       displayWhatsAppIcon();
-    }, 3600); // Delay to ensure final response is displayed before WhatsApp icon
+    }, 2600); // Delay to ensure final response is displayed before WhatsApp icon
 
     // Remove event listeners after message is sent
     userInput.removeEventListener("keyup", handleNextMessageOnEnter);
