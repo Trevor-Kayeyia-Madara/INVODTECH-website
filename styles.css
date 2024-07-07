@@ -1618,16 +1618,6 @@ footer {
 /*-------------------- Footer section ends ------------------- */
 
 /* ----  Chatbox Section Starts --- */
-/*
-#chat-icon {
-  position: fixed;
-  bottom: 12dvh;
-  margin-right: -10px;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-*/
 
 #chat-icon {
   position: fixed;
