@@ -1618,7 +1618,6 @@ footer {
 /*-------------------- Footer section ends ------------------- */
 
 /* ----  Chatbox Section Starts --- */
-
 #chat-icon {
   position: fixed;
   bottom: 12dvh;
@@ -1650,7 +1649,7 @@ footer {
 }
 
 #chat-header {
-  background-color: #800000; /* Maroon color */
+  background-color: #800000; 
   color: white;
   text-align: center;
   font-weight: bold;
@@ -1756,7 +1755,7 @@ footer {
   width: 10px;
   height: 10px;
   background-color: var(--cream);
-  animation: typing 2s infinite; /* Smooth typing animation */
+  animation: typing 2s infinite; 
 }
 @keyframes typing {
   0% { opacity: 0; }
@@ -1765,17 +1764,17 @@ footer {
 }
 
 .message.right.whatsapp-icon {
-  background-color: transparent; /* Transparent background for WhatsApp icon */
-  padding: 0; /* No padding for WhatsApp icon */
-  position: relative; /* Relative positioning for icon alignment */
+  background-color: transparent; 
+  padding: 0; 
+  position: relative; 
   display: inline-block;
-  margin-top: 1vh; /* 1vh gap between WhatsApp icon and subsequent message */
+  margin-top: 1vh; 
 }
 
 .message.right.whatsapp-icon img {
-  width: 40px; /* Adjust size of WhatsApp icon */
-  height: 40px; /* Adjust size of WhatsApp icon */
-  animation: zoomInOut 2s infinite alternate; /* Apply zoom animation */
+  width: 40px; 
+  height: 40px; 
+  animation: zoomInOut 2s infinite alternate; 
 }
 
 @keyframes zoomInOut {
@@ -1813,8 +1812,6 @@ footer {
 
 /* ----  Chatbox Section Responsiveness --- */
 @media only screen and (max-width: 1200px) {
-  /* Styles for laptops and smaller screens */
-  /* Example adjustments */
   #chat-interface {
       width: 80%;
       margin: 0 auto;
@@ -1822,16 +1819,12 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  /* Styles for tablets and smaller screens */
-  /* Example adjustments */
   #chat-interface {
       width: 90%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  /* Styles for phones and smaller screens */
-  /* Example adjustments */
   #chat-interface {
       width: 100%;
   }
