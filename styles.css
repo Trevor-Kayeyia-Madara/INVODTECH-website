@@ -1738,6 +1738,25 @@ footer {
   padding: 10px
 }
 
+.message.right.whatsapp-icon {
+  background-color: transparent; /* Transparent background for WhatsApp icon */
+  padding: 0; /* No padding for WhatsApp icon */
+  position: relative; /* Relative positioning for icon alignment */
+  display: inline-block;
+  margin-top: 1vh; /* 1vh gap between WhatsApp icon and subsequent message */
+}
+
+.message.right.whatsapp-icon img {
+  width: 40px; /* Adjust size of WhatsApp icon */
+  height: 40px; /* Adjust size of WhatsApp icon */
+  animation: zoomInOut 2s infinite alternate; /* Apply zoom animation */
+}
+
+@keyframes zoomInOut {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
 .message-container.right {
   justify-content: flex-end;
 }

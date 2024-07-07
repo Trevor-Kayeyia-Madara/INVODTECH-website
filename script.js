@@ -226,160 +226,160 @@ document.addEventListener("DOMContentLoaded", function() {
 
 */
 document.addEventListener("DOMContentLoaded", function() {
-    const chatIcon = document.getElementById("chat-icon");
-    const chatInterface = document.getElementById("chat-interface");
-    const userInput = document.getElementById("userInput");
-    const sendButton = document.getElementById("sendButton");
-    const messages = document.getElementById("messages");
+  const chatIcon = document.getElementById("chat-icon");
+  const chatInterface = document.getElementById("chat-interface");
+  const userInput = document.getElementById("userInput");
+  const sendButton = document.getElementById("sendButton");
+  const messages = document.getElementById("messages");
 
-    // Show chat interface when chat icon is clicked
-    chatIcon.addEventListener("click", function() {
-        chatInterface.style.display = "block";
-        chatIcon.style.display = "none"; // Hide chat icon when chat interface is shown
-    });
+  // Show chat interface when chat icon is clicked
+  chatIcon.addEventListener("click", function() {
+      chatInterface.style.display = "block";
+      chatIcon.style.display = "none"; // Hide chat icon when chat interface is shown
+  });
 
-    // Function to send message
-    function sendMessage() {
-        const message = userInput.value.trim(); // Trim whitespace
+  // Function to send message
+  function sendMessage() {
+      const message = userInput.value.trim(); // Trim whitespace
 
-        if (message === "") {
-            // If no message, hide chat interface and show chat icon again
-            chatInterface.style.display = "none";
-            chatIcon.style.display = "block";
-            return; // Exit function early
-        }
+      if (message === "") {
+          // If no message, hide chat interface and show chat icon again
+          chatInterface.style.display = "none";
+          chatIcon.style.display = "block";
+          return; // Exit function early
+      }
 
-        // Display user's message
-        displayMessage(message, 'left');
+      // Display user's message
+      displayMessage(message, 'left');
 
-        // Clear input field after sending
-        userInput.value = "";
+      // Clear input field after sending
+      userInput.value = "";
 
-        // Randomize typing animation duration between 4 to 7 seconds
-        const typingDuration = Math.floor(Math.random() * 4) + 4; // Random number between 4 to 7
-        setTimeout(() => {
-            displayMessage("Typing...", 'right', true);
+      // Randomize typing animation duration between 4 to 7 seconds
+      const typingDuration = Math.floor(Math.random() * 4) + 4; // Random number between 4 to 7
+      setTimeout(() => {
+          displayMessage("Typing...", 'right', true);
 
-            // Simulate typing animation and show automatic response
-            setTimeout(() => {
-                removeTypingAnimation();
+          // Simulate typing animation and show automatic response
+          setTimeout(() => {
+              removeTypingAnimation();
 
-                // Determine greeting based on time of day
-                const currentTime = new Date().getHours();
-                let greeting;
-                if (currentTime < 12) {
-                    greeting = "Good Morning";
-                } else {
-                    greeting = "Good Afternoon";
-                }
+              // Determine greeting based on time of day
+              const currentTime = new Date().getHours();
+              let greeting;
+              if (currentTime < 12) {
+                  greeting = "Good Morning";
+              } else {
+                  greeting = "Good Afternoon";
+              }
 
-                // Prepare auto response based on user input and time of day
-                let autoResponse;
-                autoResponse = `${greeting}, Thank you for contacting InvodTech Ltd! For more information reach out to us at http://www.invodtech.com or Click the link below 👇`;
+              // Prepare auto response based on user input and time of day
+              let autoResponse;
+              autoResponse = `${greeting},<br>Thank you for contacting InvodTech Ltd! For more information reach out to us at http://www.invodtech.com or Click the link below 👇`;
 
-                // Display automatic response after 3 seconds
-                setTimeout(() => {
-                    displayMessage(autoResponse, 'right');
+              // Display automatic response after 3 seconds
+              setTimeout(() => {
+                  displayMessage(autoResponse, 'right');
 
-                    // Show WhatsApp icon below the auto response
-                    displayWhatsAppIcon();
-                }, 3000); // 3 seconds for auto response to appear
+                  // Show WhatsApp icon below the auto response
+                  displayWhatsAppIcon();
+              }, 3000); // 3 seconds for auto response to appear
 
-            }, typingDuration * 1000); // Convert seconds to milliseconds for setTimeout
+          }, typingDuration * 1000); // Convert seconds to milliseconds for setTimeout
 
-        }, 0); // No delay for typing animation to appear
-    }
+      }, 0); // No delay for typing animation to appear
+  }
 
-    // Event listener for Enter key in input field
-    userInput.addEventListener("keyup", function(event) {
-        if (event.key === "Enter") {
-            sendMessage();
-        }
-    });
+  // Event listener for Enter key in input field
+  userInput.addEventListener("keyup", function(event) {
+      if (event.key === "Enter") {
+          sendMessage();
+      }
+  });
 
-    // Event listener for Send button click
-    sendButton.addEventListener("click", sendMessage);
+  // Event listener for Send button click
+  sendButton.addEventListener("click", sendMessage);
 
-    // Event listener to reset conversation when chat box is closed
-    function resetConversation() {
-        const exemptionMessage = "I'm exempt from resetting the conversation";
-        const lastMessage = messages.lastElementChild.querySelector('.message.left');
-        if (!lastMessage || lastMessage.textContent.trim() !== exemptionMessage) {
-            // Clear all messages in the chat interface
-            messages.innerHTML = "";
-        }
-    }
+  // Event listener to reset conversation when chat box is closed
+  function resetConversation() {
+      const exemptionMessage = "I'm exempt from resetting the conversation";
+      const lastMessage = messages.lastElementChild.querySelector('.message.left');
+      if (!lastMessage || lastMessage.textContent.trim() !== exemptionMessage) {
+          // Clear all messages in the chat interface
+          messages.innerHTML = "";
+      }
+  }
 
-    // Hide chat interface when clicking outside of it
-    document.addEventListener("click", function(event) {
-        if (!chatInterface.contains(event.target) && !chatIcon.contains(event.target)) {
-            chatInterface.style.display = "none";
-            chatIcon.style.display = "block"; // Show chat icon again
-            resetConversation(); // Reset conversation when chat box is closed, excluding exemptions
-        }
-    });
+  // Hide chat interface when clicking outside of it
+  document.addEventListener("click", function(event) {
+      if (!chatInterface.contains(event.target) && !chatIcon.contains(event.target)) {
+          chatInterface.style.display = "none";
+          chatIcon.style.display = "block"; // Show chat icon again
+          resetConversation(); // Reset conversation when chat box is closed, excluding exemptions
+      }
+  });
 
-    // Prevent clicks inside the chat interface from hiding it
-    chatInterface.addEventListener("click", function(event) {
-        event.stopPropagation();
-    });
+  // Prevent clicks inside the chat interface from hiding it
+  chatInterface.addEventListener("click", function(event) {
+      event.stopPropagation();
+  });
 
-    function displayMessage(text, alignment, isTyping = false) {
-        const messageContainer = document.createElement("div");
-        messageContainer.className = `message-container ${alignment}`;
-        const message = document.createElement("div");
-        message.className = `message ${alignment}`;
-        message.textContent = text;
-        if (!isTyping) {
-            const time = document.createElement("div");
-            time.className = "message-time";
-            time.textContent = new Date().toLocaleTimeString();
-            message.appendChild(time);
-        } else {
-            message.classList.add("typing");
-        }
-        messageContainer.appendChild(message);
-        messages.appendChild(messageContainer);
-        messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
-    }
+  function displayMessage(text, alignment, isTyping = false) {
+      const messageContainer = document.createElement("div");
+      messageContainer.className = `message-container ${alignment}`;
+      const message = document.createElement("div");
+      message.className = `message ${alignment}`;
+      message.innerHTML = text; // Use innerHTML to render HTML content
+      if (!isTyping) {
+          const time = document.createElement("div");
+          time.className = "message-time";
+          time.textContent = new Date().toLocaleTimeString();
+          message.appendChild(time);
+      } else {
+          message.classList.add("typing");
+      }
+      messageContainer.appendChild(message);
+      messages.appendChild(messageContainer);
+      messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
+  }
 
-    function removeTypingAnimation() {
-        const typingMessage = document.querySelector(".message.typing");
-        if (typingMessage) {
-            typingMessage.parentElement.remove();
-        }
-    }
+  function removeTypingAnimation() {
+      const typingMessage = document.querySelector(".message.typing");
+      if (typingMessage) {
+          typingMessage.parentElement.remove();
+      }
+  }
 
-    function displayWhatsAppIcon() {
-        const messageContainer = document.createElement("div");
-        messageContainer.className = "message-container right";
-        const message = document.createElement("div");
-        message.className = "message right whatsapp-icon";
-        const whatsappLink = document.createElement("a");
-        whatsappLink.href = "https://wa.me/254790728763";
-        whatsappLink.target = "Whatsapp";
-        const whatsappIcon = document.createElement("img");
-        whatsappIcon.src = "assets/services/whatsapp.jfif";
-        whatsappIcon.alt = "WhatsApp";
-        whatsappIcon.style.width = "40px"; // Adjust size of WhatsApp icon
-        whatsappIcon.style.height = "40px"; // Adjust size of WhatsApp icon
-        whatsappLink.appendChild(whatsappIcon);
-        message.appendChild(whatsappLink);
-        messageContainer.appendChild(message);
-        messages.appendChild(messageContainer);
-        messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
+  function displayWhatsAppIcon() {
+      const messageContainer = document.createElement("div");
+      messageContainer.className = "message-container right";
+      const message = document.createElement("div");
+      message.className = "message right whatsapp-icon";
+      const whatsappLink = document.createElement("a");
+      whatsappLink.href = "https://wa.me/254756582435";
+      whatsappLink.target = "Whatsapp";
+      const whatsappIcon = document.createElement("img");
+      whatsappIcon.src = "assets/services/whatsapp.jfif";
+      whatsappIcon.alt = "WhatsApp";
+      whatsappIcon.style.width = "40px"; // Adjust size of WhatsApp icon
+      whatsappIcon.style.height = "40px"; // Adjust size of WhatsApp icon
+      whatsappLink.appendChild(whatsappIcon);
+      message.appendChild(whatsappLink);
+      messageContainer.appendChild(message);
+      messages.appendChild(messageContainer);
+      messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
 
-        // Apply CSS animation for continuous zoom effect
-        whatsappIcon.style.animation = "zoomInOut 2s infinite alternate";
+      // Apply CSS animation for continuous zoom effect
+      whatsappIcon.style.animation = "zoomInOut 2s infinite alternate";
 
-        // CSS keyframes for zoom animation
-        const style = document.createElement("style");
-        style.textContent = `
-            @keyframes zoomInOut {
-                from { transform: scale(1); }
-                to { transform: scale(1.2); }
-            }
-        `;
-        document.head.appendChild(style);
-    }
+      // CSS keyframes for zoom animation
+      const style = document.createElement("style");
+      style.textContent = `
+          @keyframes zoomInOut {
+              from { transform: scale(1); }
+              to { transform: scale(1.2); }
+          }
+      `;
+      document.head.appendChild(style);
+  }
 });
