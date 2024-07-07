@@ -1627,13 +1627,6 @@ footer {
   cursor: pointer;
 }
 
-#chat-icon img {
-  width: 6dvh;
-  height: 6dvh;
-  border-radius: 50%;
-  padding: 3px;
-  border: 2px solid var(--maroon);
-}
 */
 
 #chat-icon {
