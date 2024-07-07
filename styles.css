@@ -1707,6 +1707,10 @@ footer {
 .message-container {
   display: flex;
   margin-top: 10px;
+ 
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .message-container.left {
@@ -1720,22 +1724,44 @@ footer {
 .message {
   max-width: 70dvw;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   position: relative;
   margin-bottom: 2px;
+  background-color: #f0f0f0;
+  word-wrap: break-word;
+  transition: transform 0.3s ease-in-out;  
 }
 
 .message.left {
-  background-color: #FFA500; 
+  background-color: var(--cream); 
+  align-self: flex-start;
+  margin-right: auto;
+  color: #000000;
 }
 
 .message.right {
-  background-color: #007BFF; 
+  background-color: var(--maroon); 
   color: white;
   margin-bottom: 3px; 
   border-radius: 10px; 
   max-width: 80%; 
-  padding: 10px
+  padding: 10px;
+  align-self: flex-end;
+  margin-left: auto;
+}
+.message.typing::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--cream);
+  animation: typing 2s infinite; /* Smooth typing animation */
+}
+@keyframes typing {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .message.right.whatsapp-icon {
