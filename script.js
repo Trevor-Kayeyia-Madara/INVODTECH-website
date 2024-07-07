@@ -236,88 +236,78 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Show chat interface when chat icon is clicked
   chatIcon.addEventListener("click", function() {
-      chatInterface.style.display = "block";
-      chatIcon.style.display = "none"; // Hide chat icon when chat interface is shown
+    chatInterface.style.display = "block";
+    chatIcon.style.display = "none"; // Hide chat icon when chat interface is shown
   });
 
   // Function to send message
   function sendMessage() {
-      const message = userInput.value.trim(); // Trim whitespace
+    const message = userInput.value.trim(); // Trim whitespace
 
-      if (message === "") {
-          // If no message, hide chat interface and show chat icon again
-          chatInterface.style.display = "none";
-          chatIcon.style.display = "block";
-          return; // Exit function early
-      }
+    if (message === "") {
+      // If no message, hide chat interface and show chat icon again
+      chatInterface.style.display = "none";
+      chatIcon.style.display = "block";
+      return; // Exit function early
+    }
 
-      // Display user's message
-      displayMessage(message, 'left');
+    // Display user's message
+    displayMessage(message, 'left');
 
-      // Clear input field after sending
-      userInput.value = "";
+    // Clear input field after sending
+    userInput.value = "";
+
+    // Display typing animation after sending user message
+    displayTypingAnimation();
+
+    // Simulate typing animation and show rest of the auto response
+    setTimeout(() => {
+      removeTypingAnimation();
 
       if (!isGreetingDisplayed) {
-          // Display typing animation after 4 seconds
-          setTimeout(() => {
-              displayMessage("Typing...", 'right', true);
+        // Display initial greeting and "How may I help you today?"
+        const currentTime = new Date().getHours();
+        let greeting;
+        if (currentTime < 12) {
+          greeting = "Good Morning";
+        } else {
+          greeting = "Good Afternoon";
+        }
+        const initialResponse = `${greeting},<br>How may I help you today?`;
+        displayMessage(initialResponse, 'right');
 
-              // Simulate typing animation and show rest of the auto response
-              setTimeout(() => {
-                  removeTypingAnimation();
+        isGreetingDisplayed = true;
 
-                  // Display initial greeting and "How may I help you today?"
-                  const currentTime = new Date().getHours();
-                  let greeting;
-                  if (currentTime < 12) {
-                      greeting = "Good Morning";
-                  } else {
-                      greeting = "Good Afternoon";
-                  }
-                  const initialResponse = `${greeting},<br>How may I help you today?`;
-                  displayMessage(initialResponse, 'right');
-
-                  isGreetingDisplayed = true;
-
-                  // Event listener for next user message after initial response
-                  userInput.addEventListener("keyup", handleNextMessageOnEnter);
-                  sendButton.addEventListener("click", handleNextMessage);
-
-              }, 2000); // 2 seconds for typing animation
-          }, 4000); // 4 seconds delay before typing animation starts
+        // Event listener for next user message after initial response
+        userInput.addEventListener("keyup", handleNextMessageOnEnter);
+        sendButton.addEventListener("click", handleNextMessage);
       } else {
-          handleNextMessage();
+        handleNextMessage();
       }
+    }, 8000); // 2 seconds for typing animation
   }
 
   // Function to handle next user message
   function handleNextMessage() {
-      // Display final auto response
-      const finalResponse = "Thank you for contacting InvodTech Ltd! For more information reach out to us at http://www.invodtech.com or Click the link below 👇";
-      displayMessage(finalResponse, 'right');
+    // Display final auto response
+    const finalResponse = "Thank you for contacting InvodTech Ltd! For more information reach out to us at http://www.invodtech.com or Click the link below 👇";
+    displayMessage(finalResponse, 'right');
 
-      // Display WhatsApp icon below the final auto response
-      setTimeout(() => {
-          displayWhatsAppIcon();
-      }, 1000); // Delay to ensure final response is displayed before WhatsApp icon
+    // Display WhatsApp icon below the final auto response
+    setTimeout(() => {
+      displayWhatsAppIcon();
+    }, 3600); // Delay to ensure final response is displayed before WhatsApp icon
 
-      // Remove event listeners after message is sent
-      userInput.removeEventListener("keyup", handleNextMessageOnEnter);
-      sendButton.removeEventListener("click", handleNextMessage);
-  }
-
-  // Event listener for Enter key in input field after initial response
-  function handleNextMessageOnEnter(event) {
-      if (event.key === "Enter") {
-          handleNextMessage();
-      }
+    // Remove event listeners after message is sent
+    userInput.removeEventListener("keyup", handleNextMessageOnEnter);
+    sendButton.removeEventListener("click", handleNextMessage);
   }
 
   // Event listener for Enter key in input field
   userInput.addEventListener("keyup", function(event) {
-      if (event.key === "Enter") {
-          sendMessage();
-      }
+    if (event.key === "Enter") {
+      sendMessage();
+    }
   });
 
   // Event listener for Send button click
@@ -325,80 +315,84 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Event listener to reset conversation when chat box is closed
   function resetConversation() {
-      messages.innerHTML = ""; // Clear all messages in the chat interface
-      isGreetingDisplayed = false; // Reset greeting displayed flag
+    messages.innerHTML = ""; // Clear all messages in the chat interface
+    isGreetingDisplayed = false; // Reset greeting displayed flag
   }
 
   // Hide chat interface when clicking outside of it
   document.addEventListener("click", function(event) {
-      if (!chatInterface.contains(event.target) && !chatIcon.contains(event.target)) {
-          chatInterface.style.display = "none";
-          chatIcon.style.display = "block"; // Show chat icon again
-          resetConversation(); // Reset conversation when chat box is closed
-      }
+    if (!chatInterface.contains(event.target) && !chatIcon.contains(event.target)) {
+      chatInterface.style.display = "none";
+      chatIcon.style.display = "block"; // Show chat icon again
+      resetConversation(); // Reset conversation when chat box is closed
+    }
   });
 
   // Prevent clicks inside the chat interface from hiding it
   chatInterface.addEventListener("click", function(event) {
-      event.stopPropagation();
+    event.stopPropagation();
   });
 
   function displayMessage(text, alignment, isTyping = false) {
-      const messageContainer = document.createElement("div");
-      messageContainer.className = `message-container ${alignment}`;
-      const message = document.createElement("div");
-      message.className = `message ${alignment}`;
-      message.innerHTML = text; // Use innerHTML to render HTML content
-      if (!isTyping) {
-          const time = document.createElement("div");
-          time.className = "message-time";
-          time.textContent = new Date().toLocaleTimeString();
-          message.appendChild(time);
-      } else {
-          message.classList.add("typing");
-      }
-      messageContainer.appendChild(message);
-      messages.appendChild(messageContainer);
-      messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
+    const messageContainer = document.createElement("div");
+    messageContainer.className = `message-container ${alignment}`;
+    const message = document.createElement("div");
+    message.className = `message ${alignment}`;
+    message.innerHTML = text; // Use innerHTML to render HTML content
+    if (!isTyping) {
+      const time = document.createElement("div");
+      time.className = "message-time";
+      time.textContent = new Date().toLocaleTimeString();
+      message.appendChild(time);
+    } else {
+      message.classList.add("typing");
+    }
+    messageContainer.appendChild(message);
+    messages.appendChild(messageContainer);
+    messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
+  }
+
+  function displayTypingAnimation() {
+    displayMessage("Typing...", 'right', true);
   }
 
   function removeTypingAnimation() {
-      const typingMessage = document.querySelector(".message.typing");
-      if (typingMessage) {
-          typingMessage.parentElement.remove();
-      }
+    const typingMessage = document.querySelector(".message.typing");
+    if (typingMessage) {
+      typingMessage.parentElement.remove();
+    }
   }
 
   function displayWhatsAppIcon() {
-      const messageContainer = document.createElement("div");
-      messageContainer.className = "message-container right";
-      const message = document.createElement("div");
-      message.className = "message right whatsapp-icon";
-      const whatsappLink = document.createElement("a");
-      whatsappLink.href = "https://wa.me/254790728763";
-      whatsappLink.target = "Whatsapp";
-      const whatsappIcon = document.createElement("img");
-      whatsappIcon.src = "assets/services/whatsapp.jfif";
-      whatsappIcon.alt = "WhatsApp";
-      whatsappIcon.style.width = "40px"; // Adjust size of WhatsApp icon
-      whatsappIcon.style.height = "40px"; // Adjust size of WhatsApp icon
-      whatsappLink.appendChild(whatsappIcon);
-      message.appendChild(whatsappLink);
-      messageContainer.appendChild(message);
-      messages.appendChild(messageContainer);
-      messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
+    const messageContainer = document.createElement("div");
+    messageContainer.className = "message-container right";
+    const message = document.createElement("div");
+    message.className = "message right whatsapp-icon";
+    const whatsappLink = document.createElement("a");
+    whatsappLink.href = "https://wa.me/254790728763";
+    whatsappLink.target = "Whatsapp";
+    const whatsappIcon = document.createElement("img");
+    whatsappIcon.src = "assets/services/whatsapp.jfif";
+    whatsappIcon.alt = "WhatsApp";
+    whatsappIcon.style.width = "40px"; // Adjust size of WhatsApp icon
+    whatsappIcon.style.height = "40px"; // Adjust size of WhatsApp icon
+    whatsappLink.appendChild(whatsappIcon);
+    message.appendChild(whatsappLink);
+    messageContainer.appendChild(message);
+    messages.appendChild(messageContainer);
+    messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
 
-      // Apply CSS animation for continuous zoom effect
-      whatsappIcon.style.animation = "zoomInOut 2s infinite alternate";
+    // Apply CSS animation for continuous zoom effect
+    whatsappIcon.style.animation = "zoomInOut 2s infinite alternate";
 
-      // CSS keyframes for zoom animation
-      const style = document.createElement("style");
-      style.textContent = `
-          @keyframes zoomInOut {
-              from { transform: scale(1); }
-              to { transform: scale(1.2); }
-          }
-      `;
-      document.head.appendChild(style);
+    // CSS keyframes for zoom animation
+    const style = document.createElement("style");
+    style.textContent = `
+      @keyframes zoomInOut {
+        from { transform: scale(1); }
+        to { transform: scale(1.2); }
+      }
+    `;
+    document.head.appendChild(style);
   }
 });
