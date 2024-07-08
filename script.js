@@ -1,12 +1,23 @@
 //------------ Hamburger menu --------------------//
-document.addEventListener('DOMContentLoaded', function() {
-  const toggler = document.querySelector('.navbar-toggler');
-  const menu = document.querySelector('.navbar ul');
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
-  toggler.addEventListener('click', function() {
-    menu.classList.toggle('show');
-  });
-});
+
+openMenu.addEventListener('click', show); 
+closeMenu.addEventListener('click', close); 
+
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+
+function close(){
+    mainMenu.style.top = '-1000%'
+    //mainMenu.style.top = '0'
+}
+
 //------------Testimonials-------------------// 
 document.addEventListener('DOMContentLoaded', () => {
   let testimonials = document.querySelectorAll('.testimonial');
