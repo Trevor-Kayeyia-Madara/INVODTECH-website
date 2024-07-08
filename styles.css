@@ -216,7 +216,6 @@ body {
   background-repeat: no-repeat;
 }
 .content {
-  padding-top: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -236,7 +235,6 @@ body {
 
 .content p {
   font-size: 35px;
-  margin-bottom: 40px;
   margin-left: 20px;
  
 }
@@ -263,7 +261,7 @@ button:hover {
 
 /*-------- Services on home page starts------ */
 .container-wrapper {
-  margin-top: -1%;
+  margin-top: 2%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
