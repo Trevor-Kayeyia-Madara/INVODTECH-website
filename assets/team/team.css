@@ -7,13 +7,22 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
+:root {
+  --brown: #513a2f;
+  --brown1: #665248;
+  --cream: #ffe8a2;
+  --white: #ffffff;
+  --goldish: #fae59f;
+  --black: #000000;
+  --maroon: #871828;
+  --trans: 2s;
+}
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("images/bg.jpg") #030728 no-repeat center;
+  background: #000000 no-repeat center;
 }
 
 .slider-wrapper {
@@ -60,15 +69,15 @@ body {
   border-radius: 6px;
   font-weight: 500;
   cursor: pointer;
-  background: #fff;
+  background: #ffe;
   border: 1px solid transparent;
   transition: 0.2s ease;
 }
 
 .card-list .card-item .message-button:hover {
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #ffe8a2;
+  color: #ffe8a2;
 }
 
 .slider-wrapper .swiper-pagination-bullet {
@@ -83,18 +92,19 @@ body {
 }
 
 .slider-wrapper .swiper-slide-button {
-  color: #fff;
+  color: #333;
   margin-top: -55px;
   transition: 0.2s ease;
 }
 
 .slider-wrapper .swiper-slide-button:hover {
-  color: #4658ff;
+  color: #e3e3e3;
 }
 .card-list .card-item .media-icons {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  color: #e3e3e3;
+  top: 30px;
+  right: 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,6 +114,7 @@ body {
   color: #fff;
   opacity: 0.6;
   margin-top: 10px;
+  font-size: x-large;
   transition: all 0.3s ease;
   cursor: pointer;
 }
