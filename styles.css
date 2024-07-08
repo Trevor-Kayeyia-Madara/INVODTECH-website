@@ -56,17 +56,17 @@ html {
 
 
 .logo {
-  height: 5%;
-  width: 3%;
+  height: 8%;
+  width: 5%;
   padding: 6px;
   margin-left: 15px;
-  border-radius: 20%;
+  border-radius: 10%;
   border: 0.15rem solid var(--maroon);
   transition: transform 0.01s ease;
 }
 .logo:hover {
   transform: scale(1.1);
-  /*background-color: var(--cream);*/
+  background-color: var(--black);
   transition: var(--trans);
 }
 .logo a {
@@ -169,15 +169,16 @@ body {
 
 .nav .mainMenu li a {
   display: inline-block;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 .nav .mainMenu li a:hover{
-  background: rgb(96, 2,2);
+  color: rgb(96, 2,2);
 }
 
 .nav .openMenu {
