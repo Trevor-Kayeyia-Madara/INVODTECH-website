@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const message = userInput.value.trim(); 
 
     if (message === "") {
-      return;
+      return; 
     }
 
     displayMessage(message, 'left');
