@@ -53,39 +53,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let isGreetingDisplayed = false;
 
-
   chatIcon.addEventListener("click", function() {
     chatInterface.style.display = "block";
     chatIcon.style.display = "none"; 
     userInput.focus(); 
   });
 
-
   function sendMessage() {
     const message = userInput.value.trim(); 
 
     if (message === "") {
-    
-      chatInterface.style.display = "none";
-      chatIcon.style.display = "block";
-      return; 
+      return;
     }
 
-  
     displayMessage(message, 'left');
-
-   
     userInput.value = "";
-
-   
     displayTypingAnimation();
 
-  
     setTimeout(() => {
       removeTypingAnimation();
 
       if (!isGreetingDisplayed) {
-       
         const currentTime = new Date().getHours();
         let greeting;
         if (currentTime < 12) {
@@ -106,32 +94,26 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 7000); 
   }
 
-  // Function to handle next user message
   function handleNextMessage() {
- 
     const finalResponse = "Thank you for your feedback! For more information about your request reach out to us on Instagram @invod.tech or Via WhatsApp 👇";
     displayMessage(finalResponse, 'right');
 
-   
     setTimeout(() => {
       displayWhatsAppIcon();
     }, 2600); 
 
-    
     userInput.removeEventListener("keyup", handleNextMessageOnEnter);
     sendButton.removeEventListener("click", handleNextMessage);
   }
 
-
+ 
   userInput.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
       sendMessage();
     }
   });
 
-
   sendButton.addEventListener("click", sendMessage);
-
 
   function resetConversation() {
     messages.innerHTML = ""; 
@@ -145,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function() {
       resetConversation(); 
     }
   });
-
 
   chatInterface.addEventListener("click", function(event) {
     event.stopPropagation();
@@ -200,7 +181,6 @@ document.addEventListener("DOMContentLoaded", function() {
     messages.appendChild(messageContainer);
     messages.scrollTop = messages.scrollHeight; 
 
-   
     whatsappIcon.style.animation = "zoomInOut 2s infinite alternate";
 
     const style = document.createElement("style");
