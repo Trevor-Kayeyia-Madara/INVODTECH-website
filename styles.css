@@ -169,12 +169,13 @@ body {
 
 .nav .mainMenu li a {
   display: inline-block;
-  padding: 10px;
+  padding: 8px;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   font-size: 0.8rem;
   letter-spacing: 1px;
+  margin-top: 1px;
 }
 
 .nav .mainMenu li a:hover{
@@ -192,6 +193,7 @@ body {
   font-size: 2rem;
   display: none;
   cursor: pointer;
+  margin-top: 1px;
 }
 
 
@@ -215,8 +217,8 @@ body {
 .nav .mainMenu .closeMenu {
   display: block;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 2px;
+  right: 2px;
 }
 .nav .openMenu {
   display: block;
@@ -1496,14 +1498,14 @@ footer {
 #chat-icon {
   position: fixed;
   bottom: 12dvh;
-  right: 20px;
+  right: 25px;
   margin-right: -10px;
   cursor: pointer;
   z-index: 1000;
 }
 #chat-icon img {
-  width: 6dvh;
-  height: 6dvh;
+  width: 7.5dvh;
+  height: 7.5dvh;
   border-radius: 50%;
   padding: 3px;
   border: 2px solid var(--maroon);
@@ -1707,7 +1709,7 @@ footer {
       width: 70%;
   }
   #sendButton {
-      width: 28%;
+      width: 30%;
   }
 }
 
