@@ -76,35 +76,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
     displayMessage(message, "left");
     userInput.value = "";
-    displayTypingAnimation();
 
-    setTimeout(() => {
-      removeTypingAnimation();
+    if (checkThankYouMessage(message)) {
+      displayTypingAnimation();
+      setTimeout(() => {
+        removeTypingAnimation();
+        displayThankYouResponse();
+      }, 1500);
+    } else {
+      displayTypingAnimation();
 
-      if (!isGreetingDisplayed) {
-        const currentTime = new Date().getHours();
-        let greeting;
-        if (currentTime < 12) {
-          greeting = "Good Morning";
+      setTimeout(() => {
+        removeTypingAnimation();
+
+        if (!isGreetingDisplayed) {
+          const currentTime = new Date().getHours();
+          let greeting;
+          if (currentTime < 12) {
+            greeting = "Good Morning";
+          } else {
+            greeting = "Good Afternoon";
+          }
+          const initialResponse = `${greeting},<br>How may I help you today?`;
+          displayMessage(initialResponse, "right");
+
+          isGreetingDisplayed = true;
+
+          userInput.addEventListener("keyup", handleNextMessageOnEnter);
+          sendButton.addEventListener("click", handleNextMessage);
         } else {
-          greeting = "Good Afternoon";
+          handleNextMessage();
         }
-        const initialResponse = `${greeting},<br>How may I help you today?`;
-        displayMessage(initialResponse, "right");
+      }, 5500);
+    }
+  }
 
-        isGreetingDisplayed = true;
+  function checkThankYouMessage(message) {
+    // Check if the message contains any form of "thank you" in different cases
+    const lowerCaseMessage = message.toLowerCase();
+    return (
+      lowerCaseMessage.includes("thank you") ||
+      lowerCaseMessage.includes("thankyou")
+    );
+  }
 
-        userInput.addEventListener("keyup", handleNextMessageOnEnter);
-        sendButton.addEventListener("click", handleNextMessage);
-      } else {
-        handleNextMessage();
-      }
-    }, 5500);
+  function displayThankYouResponse() {
+    const response =
+      "You are welcome! If you have any other questions or need further assistance, feel free to reach out to us!";
+    displayMessage(response, "right");
   }
 
   function handleNextMessage() {
     const finalResponse =
-      "Thank you for you for choosing InvodTech! For more information about your request reach out to us on Instagram @invod.tech or Via WhatsApp 👇";
+      "Thank you for choosing InvodTech! For more information about your request reach out to us on WhatsApp  via the link below👇";
     displayMessage(finalResponse, "right");
 
     setTimeout(() => {
@@ -203,7 +227,10 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     document.head.appendChild(style);
   }
+
 });
+
+
 
 //Google Tag Manager
 (function (w, d, s, l, i) {
