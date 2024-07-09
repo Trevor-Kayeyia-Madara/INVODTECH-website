@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function checkThankYouMessage(message) {
-    // Check if the message contains any form of "thank you" in different cases
+   
     const lowerCaseMessage = message.toLowerCase();
     return (
       lowerCaseMessage.includes("thank you") ||
