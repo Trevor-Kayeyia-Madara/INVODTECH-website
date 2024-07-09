@@ -274,7 +274,7 @@ i {
 
 .content h1 {
   font-size: 35px;
-  margin-top: 8%;
+  margin-top: 11%;
   margin-left: 15px;
  font-weight: bolder;
 }
@@ -282,7 +282,7 @@ i {
 .content p {
   font-size: 25px;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 17px;
 }
 .content span {
   color: var(--maroon);
@@ -307,7 +307,7 @@ button:hover {
 
 /*-------- Services on home page starts------ */
 .container-wrapper {
-  margin-top: 2%;
+  margin-top: 4%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
