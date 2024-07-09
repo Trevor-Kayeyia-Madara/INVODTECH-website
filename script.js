@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         handleNextMessage();
       }
-    }, 7000);
+    }, 5500);
   }
 
   function handleNextMessage() {
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(() => {
       displayWhatsAppIcon();
-    }, 2600);
+    }, 2300);
 
     userInput.removeEventListener("keyup", handleNextMessageOnEnter);
     sendButton.removeEventListener("click", handleNextMessage);
