@@ -1527,6 +1527,7 @@ footer {
 /* ----  Chatbox Section Starts --- */
 #chat-icon {
   position: fixed;
+  color: #ffe8a2;
   bottom: 12dvh;
   right: 25px;
   margin-right: -10px;
