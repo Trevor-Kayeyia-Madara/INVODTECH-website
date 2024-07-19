@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
     message.className = "message right whatsapp-icon";
     const whatsappLink = document.createElement("a");
     whatsappLink.href =
-      "https://api.whatsapp.com/send/?phone=254785052408&text=Dear+InvodTech+Ltd,+I+would+like+to+inquire+about+your+services.+Please+provide+me+with+the+necessary+information.+Thank+you.";
+      "https://api.whatsapp.com/send/?phone=254112916863&text=Dear+InvodTech+Ltd,+I+would+like+to+inquire+about+your+services.+Please+provide+me+with+the+necessary+information.+Thank+you.";
 
     // whatsappLink.href = "https://wa.me/254785052408";
     whatsappLink.target = "Whatsapp";
