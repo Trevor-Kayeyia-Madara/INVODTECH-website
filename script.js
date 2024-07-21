@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const whatsappIcon = document.createElement("img");
     whatsappIcon.src = "assets/services/whatsapp.jfif";
     whatsappIcon.alt = "WhatsApp";
-    whatsappIcon.style.width = "40px";
+    whatsappIcon.style.width = "40px";  
     whatsappIcon.style.height = "40px";
     whatsappLink.appendChild(whatsappIcon);
     message.appendChild(whatsappLink);
