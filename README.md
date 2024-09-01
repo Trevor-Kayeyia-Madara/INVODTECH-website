@@ -1,2 +1,2 @@
 # INVODTECH-website
-Detailed  InvodTech website documentation
+Detailed full InvodTech website documentation
